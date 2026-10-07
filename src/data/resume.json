@@ -1,0 +1,120 @@
+{
+  "basics": {
+    "name": "AHM Zafir Hasan",
+    "title": "Full Stack Developer",
+    "location": "Dhaka, Bangladesh",
+    "email": "ahmzafirhasan@gmail.com",
+    "phone": "+880 1747 544 273",
+    "summary": "Full stack developer trained through the IsDB-BISEW IT Scholarship Programme, building REST APIs and web applications with Node.js, C#/ASP.NET, SQL Server and MongoDB. Experienced with relational and NoSQL data modeling, token-based authentication and API testing, and currently serving as backend lead on a team capstone project.",
+    "avatar": "/profile.png",
+    "resumeUrl": "https://github.com/Zafff-e/Resume_CV/raw/main/resume.pdf",
+    "profiles": [
+      { "label": "GitHub", "url": "https://github.com/Zafff-e", "display": "github.com/Zafff-e" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/zafir-hasan-developer", "display": "linkedin.com/in/zafir-hasan-developer" }
+    ]
+  },
+  "skills": [
+    { "category": "Languages", "items": ["JavaScript (ES6+)", "SQL", "C#"] },
+    { "category": "Frontend Development", "items": ["React", "Angular", "Component Architecture", "Single Page Applications (SPA)"] },
+    { "category": "Backend & APIs", "items": ["Node.js", "Express.js", "RESTful Web APIs", "API Integration (JSON/XML)", "WebSockets"] },
+    { "category": "Databases (RDBMS & NoSQL)", "items": ["Microsoft SQL Server", "MongoDB", "Mongoose", "Relational Schema Normalization (3NF)"] },
+    { "category": "Core Concepts & Architecture", "items": ["Object-Oriented Programming (OOP)", "Data Structures & Algorithms", "Design Patterns (MVC, Repository, DTO)", "Token Auth (JWT)", "bcrypt"] },
+    { "category": "AI & Agentic Systems", "items": ["Agentic AI Workflows", "LLM Orchestration & Prompting", "Multi-Agent Handling", "AI-Assisted Development"] },
+    { "category": "Tools & Cloud", "items": ["Git", "GitHub (Branching, PRs, Code Reviews)", "Postman (API Testing & Validation)", "Cloud Services (Azure)", "VS Code"] }
+  ],
+  "experience": [
+    {
+      "company": "IsDB-BISEW IT Scholarship Programme | Star Computer Systems Limited",
+      "role": "Enterprise Software Engineering Trainee (Intensive Full-Time Diploma)",
+      "period": "Jan 2026 – Present",
+      "highlights": [
+        "Intensive backend software engineering training focusing on Database Design & Implementation (MS SQL Server), Object-Oriented Programming (C#), Web APIs & Web Services, and Cloud Services (Azure).",
+        "Built practical proficiency in relational schema design, 3NF normalization, RESTful API architecture, JSON/XML data handling, CRUD operations, and Entity Framework Code-First data modeling."
+      ]
+    },
+    {
+      "company": "Headless Technology",
+      "role": "Web Development & IT Associate",
+      "period": "Jan 2019 – Dec 2020",
+      "highlights": [
+        "Developed and maintained web applications and supported internal IT infrastructure; managed database updates and implemented technical solutions for client and internal workflows."
+      ]
+    },
+    {
+      "company": "Marico Bangladesh Limited",
+      "role": "Management Trainee Officer",
+      "period": "Jan 2021 – Feb 2022",
+      "highlights": [
+        "Collaborated with cross-functional corporate teams to execute analytical evaluations, data validation, and project coordination."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "University of Dhaka",
+      "degree": "Bachelor of Social Sciences (B.S.S. Hons) in Economics",
+      "period": "Jan 2014 – Dec 2019",
+      "highlights": ["Coursework in Econometrics, Mathematical Statistics, and Quantitative Data Analysis."]
+    },
+    {
+      "school": "IsDB-BISEW IT Scholarship",
+      "degree": "Professional Diploma in Software Development",
+      "period": "2026",
+      "highlights": ["Professional diploma curriculum focusing on Full-Stack Software Engineering, Relational Database Systems, and Cloud Web APIs."]
+    },
+    {
+      "school": "Cantonment Public School & College, Rangpur",
+      "degree": "Higher Secondary Certificate (HSC)",
+      "period": "2011 – 2013",
+      "highlights": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "TechNova E-Commerce Platform",
+      "tag": "Full-Stack Project",
+      "status": "Completed",
+      "tech": ["Node.js", "Express.js", "MongoDB", "WebSockets", "bcrypt"],
+      "description": "Modular Node.js/Express backend with REST endpoints for authentication, product catalog, cart and cash-on-delivery orders, MongoDB data models and real-time WebSocket updates.",
+      "highlights": [
+        "Architected a modular backend using Node.js & Express.js, implementing RESTful API endpoints for user authentication, product catalogs, shopping cart operations, and cash-on-delivery order processing.",
+        "Modeled document schemas and relational references using MongoDB & Mongoose (User, Product, Order collections); migrated persistent data storage from static JSON to MongoDB.",
+        "Implemented secure authentication with bcrypt password hashing and session validation; integrated WebSockets for real-time frontend updates and verified API payloads."
+      ]
+    },
+    {
+      "name": "Hyperlocal Skilled-Worker Booking Marketplace",
+      "tag": "Capstone Project",
+      "status": "In Progress",
+      "tech": ["REST API Architecture", "Team Capstone"],
+      "description": "Backend lead designing REST API services for customer booking flows, service scheduling and provider profiles, working in a Git/GitHub team workflow.",
+      "highlights": [
+        "Serving as backend lead designing RESTful API services for customer booking flows, service scheduling, and provider profiles.",
+        "Establishing API contracts, participating in daily standups, sprint planning, and managing the team repository on Git/GitHub with active peer code reviews."
+      ]
+    },
+    {
+      "name": "Supply Chain & Order Management REST API",
+      "tag": "Backend System",
+      "status": "Completed",
+      "tech": ["C#", "ASP.NET Web API", "EF", "SQL Server", "Postman"],
+      "description": "ASP.NET Web API handling master-detail data with full CRUD, EF migrations, token-based authentication, role-based access control and Postman test suites.",
+      "highlights": [
+        "Engineered backend RESTful Web APIs handling master-detail data structures, executing complete CRUD operations and database migrations with Entity Framework.",
+        "Implemented token-based authentication and role-based access control; authored automated Postman test suites to validate endpoints, DTO contracts, and JSON responses."
+      ]
+    },
+    {
+      "name": "Power Plant Generation Database Architecture",
+      "tag": "Database Design",
+      "status": "Completed",
+      "tech": ["Microsoft SQL Server", "Relational Design", "SQL"],
+      "description": "Normalized 3NF schema modeling monthly generation metrics, plant operations and fuel types, built from raw operational spreadsheets with enforced keys and integrity.",
+      "url": "https://github.com/Zafff-e/-Power-Plant-Operations-Reporting-Database.",
+      "highlights": [
+        "Designed a normalized 3NF relational database schema modeling monthly power generation metrics, plant operations, and fuel types based on real-world industrial specifications.",
+        "Transformed raw operational spreadsheets into structured SQL tables, enforcing primary/foreign keys and referential integrity for scalable data retrieval."
+      ]
+    }
+  ]
+}
