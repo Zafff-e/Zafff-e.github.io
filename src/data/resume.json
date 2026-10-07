@@ -1,0 +1,83 @@
+{
+  "basics": {
+    "name": "AHM Zafir Hasan",
+    "title": "Aspiring .NET Developer",
+    "location": "Dhaka, Bangladesh",
+    "email": "ahmzafirhasan@gmail.com",
+    "phone": "+880 1747 544 273",
+    "summary": "Entry-level software developer with structured, hands-on training in C#, ASP.NET Core, REST APIs, SQL Server and modern full-stack web development through the IsDB IT Scholarship Programme. Previously worked in research and data analysis. Looking for a software engineering internship or junior developer role.",
+    "avatar": "/profile.png",
+    "resumeUrl": "https://github.com/Zafff-e/Resume_CV/raw/main/resume.pdf",
+    "profiles": [
+      { "label": "GitHub", "url": "https://github.com/Zafff-e" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/zafir-hasan-developer" }
+    ]
+  },
+  "skills": [
+    { "category": "Languages", "items": ["C#", "JavaScript", "SQL", "HTML5", "CSS3", "XML"] },
+    {
+      "category": "Frameworks & Platforms",
+      "items": [".NET", "ASP.NET Core", "ASP.NET MVC", "ASP.NET Web API", "Entity Framework Core", "Node.js", "Express.js", "Angular", "Blazor", ".NET MAUI"]
+    },
+    { "category": "Databases", "items": ["Microsoft SQL Server", "MongoDB"] },
+    { "category": "Tools", "items": ["Git", "GitHub", "Postman", "Visual Studio", "VS Code", "SSMS"] },
+    {
+      "category": "Concepts",
+      "items": ["REST APIs", "CRUD", "Authentication", "Authorization", "Relational Database Design", "Entity Relationships"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "IT Scholarship Training",
+      "company": "IsDB IT Scholarship Programme (Star Computer Systems Limited)",
+      "period": "Jan 2026 — Present",
+      "highlights": [
+        "Intensive full-stack training: SQL Server database design, C#/.NET, ASP.NET Core, Web API, Entity Framework Core and Angular.",
+        "Leading a capstone team project: a hyperlocal booking marketplace."
+      ]
+    },
+    {
+      "role": "IT Workshop Coordinator",
+      "company": "Freelance",
+      "period": "Prior experience",
+      "highlights": ["Taught ICT concepts and digital literacy to students."]
+    },
+    {
+      "role": "Management Trainee Officer",
+      "company": "Marico Bangladesh Limited",
+      "period": "2021 — 2022",
+      "highlights": ["Conducted research projects and market evaluation."]
+    }
+  ],
+  "education": [
+    { "degree": "Bachelor of Social Sciences in Economics", "school": "University of Dhaka", "period": "2014 — 2019" },
+    { "degree": "Higher Secondary School Certificate (HSC)", "school": "Cantonment Public School & College", "period": "2011 — 2013" }
+  ],
+  "projects": [
+    {
+      "name": "Skilled-Worker Marketplace",
+      "status": "In Progress",
+      "tech": ["Full Stack", "API Integration"],
+      "description": "Team project (leading) building a hyperlocal booking marketplace, integrating frontend, backend and APIs."
+    },
+    {
+      "name": "Supply Chain Web API",
+      "status": "Completed",
+      "tech": ["C#", "ASP.NET Core", "EF Core", "SQL Server", "Postman"],
+      "description": "RESTful backend managing master-detail data with full CRUD, a relational schema covering multiple data types, and token-based authentication and authorization."
+    },
+    {
+      "name": "TechNova E-Commerce",
+      "status": "Completed",
+      "tech": ["Node.js", "Express.js", "MongoDB", "jQuery"],
+      "description": "Full-stack e-commerce app with product listings, cart, secure registration/login, order processing with cash on delivery, WebSocket features and QR-code workflows."
+    },
+    {
+      "name": "Power Plant Generation Database",
+      "status": "Completed",
+      "tech": ["SQL Server", "SQL", "Data Modeling"],
+      "description": "Normalized schema (PowerPlant, FuelType, TimePeriod, PlantOperation) modelling a fiscal year of plant data, built by transforming spreadsheet data into relational tables.",
+      "url": "https://github.com/Zafff-e/-Power-Plant-Operations-Reporting-Database."
+    }
+  ]
+}
