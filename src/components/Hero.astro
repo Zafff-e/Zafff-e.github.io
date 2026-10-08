@@ -9,26 +9,22 @@ const resumeUrl = "/resume.pdf";
     
     <!-- LEFT COLUMN: HugoBlox Academic Author Card -->
     <div class="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left">
-      <div class="w-full rounded-2xl border border-slate-800 bg-slate-900/60 p-6 sm:p-7 backdrop-blur-sm shadow-xl relative overflow-hidden">
-        <!-- Subtle Top Glow Gradient -->
+      <div class="w-full rounded-2xl border border-slate-800 bg-slate-900 p-6 sm:p-7 relative overflow-hidden">
+        <!-- Subtle Top Accent Line -->
         <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500"></div>
 
         <div class="flex flex-col items-center">
-          <!-- Portrait Avatar with Glow -->
-          <div class="relative mb-5 group">
-            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 opacity-40 blur-md transition duration-500 group-hover:opacity-75"></div>
+          <!-- Portrait Avatar -->
+          <div class="relative mb-5">
             <img
               src="/profile.png"
               alt={name}
               width="180"
               height="180"
-              class="relative size-36 sm:size-40 rounded-full object-cover ring-2 ring-slate-700/80 shadow-2xl bg-slate-950"
+              class="size-36 sm:size-40 rounded-full object-cover ring-2 ring-slate-700 bg-slate-950"
             />
-            <!-- Availability Beacon -->
-            <span class="absolute bottom-1 right-2 flex size-4">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full size-4 bg-emerald-500 ring-2 ring-slate-900" title="Active & Open to Roles"></span>
-            </span>
+            <!-- Availability Badge -->
+            <span class="absolute bottom-1 right-2 inline-flex rounded-full size-3.5 bg-emerald-500 ring-2 ring-slate-900" title="Active & Open to Roles"></span>
           </div>
 
           <!-- Name & Primary Title -->
