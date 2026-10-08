@@ -1,22 +1,105 @@
 ---
 import resume from '../data/resume.json';
-const { name, title, summary, location, avatar, email, resumeUrl, profiles } = resume.basics;
+
+const { name, summary, email, resumeUrl } = resume.basics;
+
+// Specific skills required as placeholder data to map over
+const skills = [
+  'C#',
+  'ASP.NET MVC',
+  'Entity Framework',
+  'Angular',
+  'JavaScript',
+  'SQL Server',
+  'n8n'
+];
 ---
-<section class="grid items-center gap-10 py-16 sm:py-24 md:grid-cols-[1fr_auto]">
-  <div>
-    <p class="text-sm font-medium text-indigo-600 dark:text-indigo-400">Hi, I'm</p>
-    <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-white">{name}</h1>
-    <h2 class="mt-2 text-xl text-slate-600 sm:text-2xl dark:text-slate-400">{title}</h2>
-    <p class="mt-6 max-w-2xl leading-relaxed">{summary}</p>
-    <p class="mt-3 text-sm text-slate-500">{location}</p>
-    <div class="mt-8 flex flex-wrap gap-3">
-      <a href={`mailto:${email}`} class="rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-indigo-500">Contact me</a>
-      <a href={resumeUrl} class="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-medium hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">Download CV</a>
-      {profiles.map((p) => (
-        <a href={p.url} target="_blank" rel="noopener noreferrer" class="rounded-lg px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">{p.label} ↗</a>
-      ))}
+<section id="hero" class="relative py-12 sm:py-20 lg:py-24">
+  <div class="grid items-center gap-10 md:grid-cols-[1fr_auto] lg:gap-16">
+    <div class="flex flex-col justify-center">
+      <!-- Status Badge -->
+      <div class="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3.5 py-1 text-xs font-medium text-cyan-400">
+        <span class="size-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        <span>Open to Full-Stack & .NET Engineering Roles</span>
+      </div>
+
+      <!-- Large Bold Greeting with text gradient using bg-clip-text -->
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight">
+        <span class="bg-gradient-to-r from-white via-slate-100 to-cyan-400 bg-clip-text text-transparent">
+          Hi, I'm {name}
+        </span>
+      </h1>
+
+      <!-- Subtitle describing as Full-Stack Developer -->
+      <h2 class="mt-4 text-xl sm:text-2xl font-semibold text-cyan-400">
+        Full-Stack Developer
+      </h2>
+
+      <!-- Bio / Summary -->
+      <p class="mt-4 max-w-2xl text-base sm:text-lg text-slate-300 leading-relaxed">
+        {summary}
+      </p>
+
+      <!-- Action buttons -->
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a
+          href="#projects"
+          class="inline-flex items-center gap-2 rounded-xl bg-cyan-500 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-md transition hover:bg-cyan-400 hover:shadow-cyan-500/20"
+        >
+          <span>View Projects</span>
+          <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+        <a
+          href={`mailto:${email}`}
+          class="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/80 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-slate-600 hover:bg-slate-800 hover:text-white"
+        >
+          <span>Get In Touch</span>
+        </a>
+        <a
+          href={resumeUrl}
+          download="AHM_Zafir_Hasan_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 rounded-xl border border-slate-800 px-4 py-2.5 text-sm font-medium text-slate-400 transition hover:border-slate-700 hover:text-slate-200"
+        >
+          <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume CV</span>
+        </a>
+      </div>
+
+      <!-- Tech Stack Section with pill badges mapping over skills -->
+      <div class="mt-12 pt-8 border-t border-slate-800/80">
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+          Tech Stack
+        </h3>
+        <div class="flex flex-wrap gap-2.5">
+          {skills.map((skill) => (
+            <span class="rounded-full bg-slate-800 text-slate-100 px-4 py-1.5 text-sm font-medium transition hover:bg-slate-700 cursor-default border border-slate-700/50 shadow-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Avatar -->
+    <div class="flex justify-center md:justify-end">
+      <div class="relative group">
+        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-600 opacity-30 blur-xl transition duration-500 group-hover:opacity-50"></div>
+        <img
+          src="/profile.png"
+          alt={name}
+          width="260"
+          height="260"
+          class="relative size-48 sm:size-60 lg:size-64 rounded-2xl object-cover ring-2 ring-slate-800 shadow-2xl bg-slate-900"
+        />
+      </div>
     </div>
   </div>
-  <img src={avatar} alt={name} width="224" height="224"
-    class="mx-auto size-44 rounded-full bg-indigo-100 object-cover ring-4 ring-indigo-200 sm:size-56 md:order-last dark:bg-slate-800 dark:ring-slate-700" />
 </section>

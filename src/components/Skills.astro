@@ -1,14 +1,30 @@
 ---
 import resume from '../data/resume.json';
 ---
-<section id="skills" class="scroll-mt-16 py-12">
-  <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Skills</h2>
-  <dl class="mt-8 space-y-5">
+<section id="skills" class="scroll-mt-24 py-16 border-t border-slate-800">
+  <div class="mb-10">
+    <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400 mb-2">
+      <span class="size-1.5 rounded-full bg-cyan-400"></span>
+      Expertise
+    </div>
+    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+      Comprehensive Skill Matrix
+    </h2>
+    <p class="mt-2 text-base text-slate-400 max-w-2xl">
+      Tools, frameworks, database systems, and architectural patterns utilized across enterprise projects.
+    </p>
+  </div>
+
+  <dl class="space-y-6">
     {resume.skills.map((g) => (
-      <div class="grid gap-2 sm:grid-cols-[12rem_1fr]">
-        <dt class="font-medium text-slate-900 dark:text-white">{g.category}</dt>
+      <div class="grid gap-2 sm:grid-cols-[14rem_1fr] sm:items-baseline rounded-xl border border-slate-800/60 bg-slate-900/40 p-4">
+        <dt class="font-bold text-white text-sm sm:text-base">{g.category}</dt>
         <dd class="flex flex-wrap gap-2">
-          {g.items.map((s) => <span class="rounded-full border border-slate-200 px-3 py-1 text-sm dark:border-slate-700">{s}</span>)}
+          {g.items.map((s) => (
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs sm:text-sm font-medium text-slate-200 border border-slate-700/60 transition hover:bg-slate-700">
+              {s}
+            </span>
+          ))}
         </dd>
       </div>
     ))}
