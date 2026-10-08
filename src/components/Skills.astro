@@ -1,32 +1,137 @@
 ---
-import resume from '../data/resume.json';
+interface SkillGroup {
+  domain: string;
+  icon: string;
+  description: string;
+  skills: { name: string; level?: string }[];
+}
+
+const skillGroups: SkillGroup[] = [
+  {
+    domain: 'Backend & Web APIs',
+    icon: '⚡',
+    description: 'High-throughput enterprise services, REST contracts, and runtime environments.',
+    skills: [
+      { name: 'C# (.NET 9 / 8)' },
+      { name: 'ASP.NET Core Web API' },
+      { name: 'Minimal APIs' },
+      { name: 'ASP.NET MVC 5' },
+      { name: 'Node.js & Express.js' },
+      { name: 'RESTful API Design' },
+      { name: 'WebSockets Duplex' },
+    ]
+  },
+  {
+    domain: 'Databases & ORM',
+    icon: '🗄️',
+    description: 'Relational data integrity, schema normalization (3NF), and NoSQL document models.',
+    skills: [
+      { name: 'Microsoft SQL Server' },
+      { name: 'T-SQL & Stored Procs' },
+      { name: 'Table-Valued Parameters' },
+      { name: 'Entity Framework Core' },
+      { name: 'MongoDB & Mongoose' },
+      { name: '3NF Schema Design' },
+      { name: 'Indexing & Transactions' },
+    ]
+  },
+  {
+    domain: 'Frontend & SPAs',
+    icon: '🌐',
+    description: 'Component-driven Single Page Applications with responsive modern styling.',
+    skills: [
+      { name: 'React 19 / 18' },
+      { name: 'TypeScript' },
+      { name: 'Angular (Standalone)' },
+      { name: 'JavaScript (ES6+)' },
+      { name: 'Vite Ecosystem' },
+      { name: 'Tailwind CSS' },
+      { name: 'Axios & Fetch API' },
+    ]
+  },
+  {
+    domain: 'Architecture & Security',
+    icon: '🛡️',
+    description: 'Design patterns, secure token authentication, and data transfer optimization.',
+    skills: [
+      { name: 'Master-Detail Systems' },
+      { name: 'Repository Pattern' },
+      { name: 'Data Transfer Objects (DTO)' },
+      { name: 'JWT Bearer Authentication' },
+      { name: 'bcrypt Password Hashing' },
+      { name: 'Role-Based Access (RBAC)' },
+      { name: 'CORS & Multipart Streams' },
+    ]
+  },
+  {
+    domain: 'Developer Tooling & Cloud',
+    icon: '🛠️',
+    description: 'Version control, automated API testing, IDEs, and deployment pipelines.',
+    skills: [
+      { name: 'Git & GitHub' },
+      { name: 'Postman (API Test Suites)' },
+      { name: 'Microsoft Azure' },
+      { name: 'Visual Studio 2022' },
+      { name: 'VS Code' },
+      { name: 'GitHub Actions (CI/CD)' },
+      { name: 'Swagger / OpenAPI' },
+    ]
+  },
+  {
+    domain: 'AI & Methodologies',
+    icon: '🤖',
+    description: 'Modern development workflows, multi-agent systems, and Agile execution.',
+    skills: [
+      { name: 'Agentic AI Workflows' },
+      { name: 'LLM Prompt Engineering' },
+      { name: 'Agile & Sprint Planning' },
+      { name: 'Peer Code Reviews' },
+      { name: 'Quantitative Data Analysis' },
+      { name: 'Econometric Modeling' },
+    ]
+  }
+];
 ---
-<section id="skills" class="scroll-mt-24 py-16 border-t border-slate-800">
+<section id="skills" class="scroll-mt-20 py-12 border-b border-slate-800/80">
   <div class="mb-10">
-    <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400 mb-2">
+    <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-1.5">
       <span class="size-1.5 rounded-full bg-cyan-400"></span>
-      Expertise
+      Technical Taxonomy &bull; Competencies
     </div>
-    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-      Comprehensive Skill Matrix
+    <h2 class="text-2xl sm:text-3xl font-display font-extrabold tracking-tight text-white">
+      Technical Skill Matrix &amp; Stack
     </h2>
-    <p class="mt-2 text-base text-slate-400 max-w-2xl">
-      Tools, frameworks, database systems, and architectural patterns utilized across enterprise projects.
+    <p class="mt-2 text-sm text-slate-400 max-w-2xl">
+      A systematic breakdown of languages, enterprise frameworks, database engines, and software engineering methodologies.
     </p>
   </div>
 
-  <dl class="space-y-6">
-    {resume.skills.map((g) => (
-      <div class="grid gap-2 sm:grid-cols-[14rem_1fr] sm:items-baseline rounded-xl border border-slate-800/60 bg-slate-900/40 p-4">
-        <dt class="font-bold text-white text-sm sm:text-base">{g.category}</dt>
-        <dd class="flex flex-wrap gap-2">
-          {g.items.map((s) => (
-            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs sm:text-sm font-medium text-slate-200 border border-slate-700/60 transition hover:bg-slate-700">
-              {s}
-            </span>
-          ))}
-        </dd>
+  <!-- HugoBlox Academic Skills Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {skillGroups.map((group) => (
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 transition hover:border-slate-700 hover:bg-slate-900/80 backdrop-blur-xs flex flex-col justify-between">
+        <div>
+          <!-- Domain Header -->
+          <div class="flex items-center gap-2.5 mb-2">
+            <span class="text-xl">{group.icon}</span>
+            <h3 class="text-sm font-display font-bold text-white">
+              {group.domain}
+            </h3>
+          </div>
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+            {group.description}
+          </p>
+
+          <!-- Skill Badges -->
+          <div class="flex flex-wrap gap-1.5">
+            {group.skills.map((skill) => (
+              <span class="rounded-md border border-slate-800 bg-slate-950/80 px-2.5 py-1 text-xs font-mono text-slate-200 transition hover:border-cyan-500/40 hover:text-cyan-300">
+                {skill.name}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     ))}
-  </dl>
+  </div>
 </section>

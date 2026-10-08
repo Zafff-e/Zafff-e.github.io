@@ -1,120 +1,290 @@
 ---
 interface Project {
+  id: string;
+  category: 'dotnet' | 'nodejs' | 'database';
+  categoryLabel: string;
+  badge: string;
   title: string;
   shortDescription: string;
-  description?: string;
+  description: string;
+  highlights: string[];
   tags: string[];
   githubUrl: string;
+  role?: string;
 }
 
 const projects: Project[] = [
   {
-    title: 'TechNova E-Commerce',
-    shortDescription: 'Automated workflow orchestration & real-time hardware store',
-    description: 'Modular backend featuring REST endpoints for auth, catalog, cart, and order processing with WebSockets live inventory updates and MongoDB.',
-    tags: ['Node.js', 'Express.js', 'MongoDB', 'WebSockets', 'bcrypt'],
+    id: 'technova',
+    category: 'nodejs',
+    categoryLabel: 'Node.js & MongoDB',
+    badge: 'Full-Stack Architecture',
+    title: 'TechNova E-Commerce Platform',
+    role: 'Lead Full-Stack Developer',
+    shortDescription: 'Real-time hardware store & automated checkout pipeline',
+    description: 'Engineered a modular e-commerce backend with REST endpoints for authentication, product catalog, cart operations, and cash-on-delivery order processing. Replaced static JSON storage with normalized MongoDB schemas.',
+    highlights: [
+      'Engineered bi-directional WebSockets (`ws`) pipeline for real-time inventory level updates without client polling.',
+      'Protected sensitive accounts with bcrypt password hashing, session tokens, and automated invoice QR code generation.',
+      'Implemented transactional order status workflows with instant email notifications.'
+    ],
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'WebSockets', 'bcrypt', 'EJS'],
     githubUrl: 'https://github.com/Zafff-e',
   },
   {
-    title: 'Supply Chain & Product Catalog',
-    shortDescription: 'Web API service with EF Core & role-based authentication',
-    description: 'Enterprise RESTful Web API handling normalized Category-Product-Brand master-detail CRUD operations, migrations, and DTO contracts.',
-    tags: ['C#', 'ASP.NET Core', 'EF Core', 'SQL Server', 'REST API'],
+    id: 'product-catalog',
+    category: 'dotnet',
+    categoryLabel: 'ASP.NET & C#',
+    badge: 'Enterprise Master-Detail',
+    title: 'ProductCatalogSPA & Master-Detail API',
+    role: 'Backend & SPA Developer',
+    shortDescription: 'High-throughput .NET 9 Web API & dual React/Angular SPAs',
+    description: 'Enterprise RESTful Web API handling normalized Category-Product-Brand master-detail CRUD hierarchies, utilizing EF Core Code-First migrations, DTO contracts, and automated database seeding.',
+    highlights: [
+      'Developed dual client architectures: Angular client with dynamic brand insertions, and React 19 client with instant search and dual Table/Card views.',
+      'Implemented secure multipart/form-data image streaming with GUID file naming to prevent server disk collisions.',
+      'Secured API endpoints with JWT bearer authentication, role-based claims policies, and CORS configuration.'
+    ],
+    tags: ['C#', 'ASP.NET Core (.NET 9)', 'EF Core', 'SQL Server', 'React 19', 'Angular', 'TypeScript'],
     githubUrl: 'https://github.com/Zafff-e/AspNetCore-ProductCatalog-MVC',
   },
   {
-    title: 'Power Plant Operations Database',
-    shortDescription: 'Industrial 3NF relational database architecture',
-    description: 'Normalized relational schema modeling monthly power generation metrics, fuel consumption, and plant performance converted from industrial records.',
-    tags: ['SQL Server', 'T-SQL', 'Relational Design', 'Stored Procedures'],
-    githubUrl: 'https://github.com/Zafff-e/-Power-Plant-Operations-Reporting-Database.',
-  },
-  {
-    title: 'Enterprise Master-Detail Platform',
-    shortDescription: 'Web API service with TVP and stored procedures',
-    description: 'Database-First master-detail enterprise system utilizing Table-Valued Parameters (TVP), image streaming, aggregations, and pagination.',
-    tags: ['ASP.NET Core 9', 'SQL Server', 'TVP', 'EF Core', 'Stored Procs'],
-    githubUrl: 'https://github.com/Zafff-e/AspNetCore-DatabaseFirst-StoredProcedure-CRUD',
-  },
-  {
-    title: 'Skill-Commerce Marketplace',
-    shortDescription: 'Automated workflow orchestration for skilled worker booking',
-    description: 'Hyperlocal service marketplace capstone with RESTful APIs, booking flows, provider profiles, and Git team sprint coordination.',
-    tags: ['C#', 'ASP.NET Core', 'Angular', 'React', 'Azure'],
+    id: 'booking-capstone',
+    category: 'dotnet',
+    categoryLabel: 'ASP.NET & C#',
+    badge: 'Agile Team Capstone',
+    title: 'Skill-Commerce Booking Marketplace',
+    role: 'Backend & Database Lead',
+    shortDescription: 'Hyperlocal skilled-worker booking orchestration & team sprint lead',
+    description: 'Capstone hyperlocal service marketplace platform. Serving as backend and database lead designing RESTful API architecture for customer bookings, provider scheduling, and profile management.',
+    highlights: [
+      'Designed 15+ normalized REST API endpoints and data contracts for booking lifecycles and service provider verification.',
+      'Led Git/GitHub team sprint branching workflows, pull request reviews, and daily Agile standups across a 5-developer team.',
+      'Coordinated database schema migrations and integrated front-end Angular client services.'
+    ],
+    tags: ['C#', 'ASP.NET Core', 'SQL Server', 'Angular', 'REST APIs', 'Agile/Git Team'],
     githubUrl: 'https://github.com/Zafff-e',
   },
   {
-    title: 'MVC5 Code-First CRUD System',
-    shortDescription: 'Web API service and transactional master-detail platform',
-    description: 'Master-detail data platform with Code-First migrations, referential integrity, and responsive management interfaces.',
-    tags: ['ASP.NET MVC 5', 'Entity Framework', 'C#', 'Bootstrap'],
+    id: 'power-plant',
+    category: 'database',
+    categoryLabel: 'Database Architecture',
+    badge: 'Industrial 3NF Schema',
+    title: 'Power Plant Operations Reporting Database',
+    role: 'Database Architect',
+    shortDescription: 'Industrial 3NF relational database schema & operational metrics engine',
+    description: 'Engineered a normalized 3NF relational schema across 12+ tables modeling monthly power generation metrics, plant operations, and fuel types converted from real-world industrial records.',
+    highlights: [
+      'Structured raw operational spreadsheets into relational SQL tables enforcing foreign keys and cascading integrity.',
+      'Authored indexed queries, views, and stored procedures to generate analytical fiscal year reports with zero redundancy.',
+      'Standardized primary key naming, time-period dimension tables, and fuel consumption formulas.'
+    ],
+    tags: ['SQL Server', 'T-SQL', '3NF Relational Design', 'Stored Procedures', 'Data Modeling'],
+    githubUrl: 'https://github.com/Zafff-e/-Power-Plant-Operations-Reporting-Database.',
+  },
+  {
+    id: 'master-details-stored-proc',
+    category: 'dotnet',
+    categoryLabel: 'ASP.NET & C#',
+    badge: 'Database-First System',
+    title: 'Enterprise Master-Detail Stored Procedure CRUD',
+    role: 'Systems Engineer',
+    shortDescription: 'ASP.NET Core 9 master-detail system using Table-Valued Parameters (TVP)',
+    description: 'High-performance Database-First master-detail enterprise system utilizing Table-Valued Parameters (TVP), image streaming, aggregations, and pagination for enterprise transactional workflows.',
+    highlights: [
+      'Implemented transactional Wipe & Re-insert patterns in HTTP PUT endpoints to synchronize dynamic child collections without orphaned records.',
+      'Leveraged SQL Server Table-Valued Parameters (TVP) for bulk master-detail insertion in a single network round-trip.',
+      'Optimized read queries via EF Core AsNoTracking() and stored procedure projections.'
+    ],
+    tags: ['ASP.NET Core 9', 'SQL Server', 'TVP', 'EF Core', 'Stored Procs', 'Bootstrap 5'],
+    githubUrl: 'https://github.com/Zafff-e/AspNetCore-DatabaseFirst-StoredProcedure-CRUD',
+  },
+  {
+    id: 'mvc5-codefirst',
+    category: 'dotnet',
+    categoryLabel: 'ASP.NET & C#',
+    badge: 'Transactional Data Platform',
+    title: 'MVC5 Code-First Enterprise CRUD System',
+    role: 'Full-Stack Developer',
+    shortDescription: 'Master-detail data platform with Code-First migrations and referential integrity',
+    description: 'Full-featured enterprise master-detail data platform with Code-First migrations, referential integrity, and responsive management interfaces for structured inventory and order fulfillment.',
+    highlights: [
+      'Designed fluent API relationships, composite foreign keys, and validation data annotations.',
+      'Built responsive management interfaces with client-side jQuery validation and server-side verification.',
+      'Configured automated database seeding and migration rollback scripts.'
+    ],
+    tags: ['ASP.NET MVC 5', 'Entity Framework 6', 'C#', 'SQL Server', 'Bootstrap'],
     githubUrl: 'https://github.com/Zafff-e/MVC5-CodeFirst-CRUD-WebApp',
   },
 ];
 ---
-<section id="projects" class="scroll-mt-24 py-16">
-  <div class="mb-10">
-    <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400 mb-2">
+<section id="projects" class="scroll-mt-20 py-12 border-b border-slate-800/80">
+  <div class="mb-8">
+    <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-cyan-400 mb-1.5">
       <span class="size-1.5 rounded-full bg-cyan-400"></span>
-      Portfolio
+      Engineering Works &bull; Software Systems
     </div>
-    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-      Featured Projects
+    <h2 class="text-2xl sm:text-3xl font-display font-extrabold tracking-tight text-white">
+      Featured Projects &amp; System Architectures
     </h2>
-    <p class="mt-2 text-base text-slate-400 max-w-2xl">
-      A showcase of web applications, REST APIs, database architectures, and full-stack solutions.
+    <p class="mt-2 text-sm text-slate-400 max-w-2xl">
+      A curated portfolio of full-stack web applications, RESTful microservices, normalized relational schemas, and team capstone platforms.
     </p>
+
+    <!-- HugoBlox Filter Tabs -->
+    <div class="mt-6 flex flex-wrap gap-2 text-xs font-medium" id="project-filters">
+      <button
+        type="button"
+        data-filter="all"
+        class="filter-btn active rounded-lg border border-cyan-500/50 bg-cyan-500/15 px-3 py-1.5 text-cyan-300 font-semibold transition"
+      >
+        All Works ({projects.length})
+      </button>
+      <button
+        type="button"
+        data-filter="dotnet"
+        class="filter-btn rounded-lg border border-slate-800 bg-slate-900/60 px-3 py-1.5 text-slate-400 hover:border-slate-700 hover:text-white transition"
+      >
+        .NET &amp; C# (4)
+      </button>
+      <button
+        type="button"
+        data-filter="nodejs"
+        class="filter-btn rounded-lg border border-slate-800 bg-slate-900/60 px-3 py-1.5 text-slate-400 hover:border-slate-700 hover:text-white transition"
+      >
+        Node.js &amp; MongoDB (1)
+      </button>
+      <button
+        type="button"
+        data-filter="database"
+        class="filter-btn rounded-lg border border-slate-800 bg-slate-900/60 px-3 py-1.5 text-slate-400 hover:border-slate-700 hover:text-white transition"
+      >
+        Database Architecture (1)
+      </button>
+    </div>
   </div>
 
-  <!-- Projects Grid: grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Projects Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-container">
     {projects.map((project) => (
-      <article class="group flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-900 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-slate-700 hover:shadow-lg hover:shadow-cyan-900/20">
-        <div>
-          <!-- Header with Project Title and GitHub Icon Link -->
-          <div class="flex items-start justify-between gap-3">
-            <h3 class="text-lg font-bold text-white transition-colors group-hover:text-cyan-400">
-              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                {project.title}
-              </a>
-            </h3>
+      <article
+        data-category={project.category}
+        class="project-card group flex flex-col justify-between rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-slate-700 hover:shadow-xl hover:shadow-cyan-950/20 backdrop-blur-xs relative overflow-hidden"
+      >
+        <!-- Top Accent Border on Hover -->
+        <div class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-cyan-500/0 to-transparent group-hover:via-cyan-500/80 transition-all duration-300"></div>
 
-            <!-- GitHub Repository Icon Link -->
+        <div>
+          <!-- Header: Category Badge & GitHub Link -->
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="inline-flex items-center gap-1.5 rounded-full border border-slate-800 bg-slate-950 px-2.5 py-0.5 text-[11px] font-mono font-medium text-cyan-400">
+              <span class="size-1 rounded-full bg-cyan-400"></span>
+              {project.badge}
+            </span>
+
             <a
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`View ${project.title} on GitHub`}
-              class="shrink-0 text-slate-400 hover:text-white transition-colors p-1"
+              aria-label={`View ${project.title} repository on GitHub`}
+              class="flex items-center gap-1 text-xs font-mono font-medium text-slate-400 hover:text-cyan-400 transition"
+              title="View on GitHub"
             >
-              <svg class="size-5" viewBox="0 0 24 24" fill="currentColor">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              <span>Code</span>
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </a>
           </div>
 
-          <!-- Short Description Tagline -->
-          <p class="mt-2 text-xs font-semibold uppercase tracking-wider text-cyan-400/90">
-            {project.shortDescription}
+          <!-- Project Title -->
+          <h3 class="text-base sm:text-lg font-display font-bold text-white group-hover:text-cyan-300 transition-colors">
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+              {project.title}
+            </a>
+          </h3>
+
+          <!-- Subtitle / Role Tag -->
+          <p class="mt-1 text-xs font-mono text-cyan-400/90 font-medium">
+            {project.role} &bull; {project.shortDescription}
           </p>
 
           <!-- Descriptive Body -->
-          {project.description && (
-            <p class="mt-3 text-sm text-slate-300 leading-relaxed">
-              {project.description}
-            </p>
-          )}
+          <p class="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            {project.description}
+          </p>
+
+          <!-- Key Engineering Accomplishments -->
+          <div class="mt-4 space-y-1.5 border-t border-slate-800/80 pt-3.5">
+            <span class="text-[10px] font-mono uppercase text-slate-400 tracking-wider block">
+              Architectural Highlights:
+            </span>
+            <ul class="space-y-1 text-xs text-slate-300">
+              {project.highlights.map((h) => (
+                <li class="flex items-start gap-1.5">
+                  <span class="text-cyan-400 mt-0.5 shrink-0">✓</span>
+                  <span class="leading-tight">{h}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <!-- Row of small tech tags at the bottom -->
-        <div class="mt-6 flex flex-wrap gap-1.5 pt-4 border-t border-slate-800/80">
-          {project.tags.map((tag) => (
-            <span class="rounded-md bg-slate-800 px-2 py-0.5 text-xs font-medium text-slate-300 border border-slate-700/50">
-              {tag}
-            </span>
-          ))}
+        <!-- Tech Tags at Bottom -->
+        <div class="mt-6 border-t border-slate-800/80 pt-4">
+          <div class="flex flex-wrap gap-1.5">
+            {project.tags.map((tag) => (
+              <span class="rounded-md border border-slate-800 bg-slate-950/80 px-2 py-0.5 text-[10px] font-mono text-slate-300">
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <!-- Direct GitHub Link Button -->
+          <div class="mt-4 pt-3 flex items-center justify-between">
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-1.5 rounded-lg border border-slate-800 bg-slate-950/60 py-1.5 text-xs font-medium text-slate-300 hover:border-cyan-500/40 hover:bg-slate-800 hover:text-white transition"
+            >
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+              <span>Repository &amp; Specs ↗</span>
+            </a>
+          </div>
         </div>
       </article>
     ))}
   </div>
 </section>
+
+<!-- Filter Script -->
+<script is:inline>
+  const filterBtns = document.querySelectorAll('#project-filters .filter-btn');
+  const cards = document.querySelectorAll('#projects-container .project-card');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach((b) => {
+        b.classList.remove('active', 'border-cyan-500/50', 'bg-cyan-500/15', 'text-cyan-300', 'font-semibold');
+        b.classList.add('border-slate-800', 'bg-slate-900/60', 'text-slate-400');
+      });
+
+      btn.classList.add('active', 'border-cyan-500/50', 'bg-cyan-500/15', 'text-cyan-300', 'font-semibold');
+      btn.classList.remove('border-slate-800', 'bg-slate-900/60', 'text-slate-400');
+
+      const filter = btn.getAttribute('data-filter');
+
+      cards.forEach((card) => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>

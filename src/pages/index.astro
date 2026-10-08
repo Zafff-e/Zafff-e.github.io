@@ -1,13 +1,24 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
-import ExperienceList from '../components/ExperienceList.astro';
 import ProjectsGrid from '../components/ProjectsGrid.astro';
+import ExperienceList from '../components/ExperienceList.astro';
 import Skills from '../components/Skills.astro';
+import Credentials from '../components/Credentials.astro';
 ---
 <BaseLayout>
+  <!-- 1. Academic Author Profile & Living Dossier -->
   <Hero />
-  <ExperienceList />
+
+  <!-- 2. Featured Engineering Works & Systems Showcase with Filter Tabs -->
   <ProjectsGrid />
+
+  <!-- 3. Professional Experience & Technical Training Fellowship -->
+  <ExperienceList />
+
+  <!-- 4. Systematic Technical Skill Taxonomy & Stack Matrix -->
   <Skills />
+
+  <!-- 5. Academic Degrees, Fellowships & Language Certifications -->
+  <Credentials />
 </BaseLayout>

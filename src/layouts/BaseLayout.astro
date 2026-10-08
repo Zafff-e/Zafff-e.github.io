@@ -10,11 +10,11 @@ interface Props {
 }
 
 const {
-  title = `${resume.basics.name} — Full-Stack Developer Portfolio`,
+  title = `${resume.basics.name} — Academic & Software Engineering Portfolio`,
   description = resume.basics.summary,
 } = Astro.props;
 
-const resumeUrl = resume.basics.resumeUrl || "https://github.com/Zafff-e/Resume_CV/raw/main/resume.pdf";
+const resumeUrl = "/resume.pdf";
 ---
 <!doctype html>
 <html lang="en" class="dark scroll-smooth">
@@ -24,11 +24,11 @@ const resumeUrl = resume.basics.resumeUrl || "https://github.com/Zafff-e/Resume_
     <meta name="description" content={description} />
     <title>{title}</title>
 
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts: Inter, Outfit, and JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -39,64 +39,107 @@ const resumeUrl = resume.basics.resumeUrl || "https://github.com/Zafff-e/Resume_
         try {
           savedTheme = localStorage.getItem('theme');
         } catch (e) {}
-        // Default to dark mode aesthetic
         var isDark = savedTheme ? savedTheme === 'dark' : true;
         document.documentElement.classList.toggle('dark', isDark);
       })();
     </script>
   </head>
   <body class="min-h-screen flex flex-col bg-slate-950 text-slate-300 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
-    <!-- Sticky Glassmorphism Navigation Bar -->
-    <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3.5 sm:px-6 lg:px-8">
-        <a href="#top" class="group flex items-center gap-2 font-bold text-white transition hover:text-cyan-400">
-          <span class="flex size-8 items-center justify-center rounded-lg bg-cyan-500/10 text-xs font-extrabold text-cyan-400 ring-1 ring-cyan-500/30 group-hover:bg-cyan-500/20">
+    <!-- Academic Toolbar / Sticky Navigation Bar -->
+    <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur-md transition-colors duration-200">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <!-- Brand Monogram -->
+        <a href="#about" class="group flex items-center gap-2.5 font-bold text-white transition hover:text-cyan-400">
+          <span class="flex size-8 items-center justify-center rounded-lg bg-cyan-500/10 text-xs font-mono font-extrabold text-cyan-400 ring-1 ring-cyan-500/30 group-hover:bg-cyan-500/20 group-hover:ring-cyan-500/50 transition">
             ZH
           </span>
-          <span class="tracking-tight">
-            Zafir<span class="text-cyan-400">.Hasan</span>
-          </span>
+          <div class="flex flex-col">
+            <span class="font-display tracking-tight text-sm sm:text-base font-bold leading-tight">
+              AHM Zafir Hasan
+            </span>
+            <span class="text-[10px] font-mono text-slate-400 font-normal">
+              IsDB-BISEW Scholar &bull; Full-Stack .NET
+            </span>
+          </div>
         </a>
 
         <!-- Desktop Navigation Links -->
-        <div class="flex items-center gap-5 sm:gap-6">
-          <a
-            href="#experience"
-            class="text-sm font-medium text-slate-300 transition hover:text-cyan-400"
-          >
-            Experience
-          </a>
-          <a
-            href="#projects"
-            class="text-sm font-medium text-slate-300 transition hover:text-cyan-400"
-          >
-            Projects
-          </a>
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="#about" class="text-slate-300 transition hover:text-cyan-400">About</a>
+          <a href="#focus" class="text-slate-300 transition hover:text-cyan-400">Focus</a>
+          <a href="#projects" class="text-slate-300 transition hover:text-cyan-400">Projects</a>
+          <a href="#experience" class="text-slate-300 transition hover:text-cyan-400">Experience</a>
+          <a href="#skills" class="text-slate-300 transition hover:text-cyan-400">Skills</a>
+          <a href="#credentials" class="text-slate-300 transition hover:text-cyan-400">Credentials</a>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center gap-3">
+          <!-- Download CV Button -->
           <a
             href={resumeUrl}
             download="AHM_Zafir_Hasan_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-1.5 rounded-lg bg-cyan-500 px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-slate-950 shadow-sm transition hover:bg-cyan-400 hover:shadow-cyan-500/20"
+            class="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-slate-950 shadow-sm transition hover:from-cyan-400 hover:to-blue-500 hover:shadow-cyan-500/25 active:scale-95"
+            title="Download Academic CV / Resume (PDF)"
           >
-            <span>Resume</span>
             <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
+            <span class="font-medium">CV (PDF)</span>
           </a>
+
+          <!-- Theme Toggle -->
           <ThemeToggle />
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-toggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+            class="md:hidden rounded-lg p-1.5 text-slate-400 hover:bg-slate-800 hover:text-white"
+          >
+            <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
       </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 px-4 py-3 space-y-2">
+        <a href="#about" class="block py-1.5 text-sm font-medium text-slate-300 hover:text-cyan-400">About</a>
+        <a href="#focus" class="block py-1.5 text-sm font-medium text-slate-300 hover:text-cyan-400">Research &amp; Focus</a>
+        <a href="#projects" class="block py-1.5 text-sm font-medium text-slate-300 hover:text-cyan-400">Projects</a>
+        <a href="#experience" class="block py-1.5 text-sm font-medium text-slate-300 hover:text-cyan-400">Experience &amp; Training</a>
+        <a href="#skills" class="block py-1.5 text-sm font-medium text-slate-300 hover:text-cyan-400">Skills Matrix</a>
+        <a href="#credentials" class="block py-1.5 text-sm font-medium text-slate-300 hover:text-cyan-400">Education &amp; Credentials</a>
+      </div>
     </header>
 
-    <!-- Main Wrapper -->
-    <main id="top" class="flex-1 mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+    <!-- Main Content Container -->
+    <main class="flex-1 mx-auto w-full max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
       <slot />
     </main>
 
-    <!-- Footer Component pinned to bottom -->
+    <!-- Footer Component -->
     <Footer />
+
+    <!-- Mobile Nav Toggle Script -->
+    <script is:inline>
+      const menuBtn = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+      }
+    </script>
   </body>
 </html>
