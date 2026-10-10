@@ -27,24 +27,34 @@ html:not(.dark) {
    Activates when <html class="dark"> is toggled off by ThemeToggle.
    ========================================================================== */
 html:not(.dark) {
+
   /* Page background and typography */
   body {
-    background-color: #f8fafc !important; /* slate-50 */
-    color: #334155 !important;           /* slate-700 */
+    background-color: #f8fafc !important;
+    /* slate-50 */
+    color: #334155 !important;
+    /* slate-700 */
     transition: background-color 0.2s ease, color 0.2s ease;
   }
 
   /* Header & Navigation Bar */
   header {
     background-color: rgba(255, 255, 255, 0.95) !important;
-    border-color: #e2e8f0 !important;   /* slate-200 */
+    border-color: #e2e8f0 !important;
+    /* slate-200 */
     backdrop-filter: blur(12px) !important;
   }
 
   /* Headings & High-contrast Text */
-  h1, h2, h3, h4, h5, h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
   .text-white {
-    color: #0f172a !important;          /* slate-900 */
+    color: #0f172a !important;
+    /* slate-900 */
   }
 
   /* Primary Card Surfaces & Sections */
@@ -61,7 +71,8 @@ html:not(.dark) {
   .bg-slate-900\/80,
   .bg-slate-900\/60,
   .bg-slate-900\/90 {
-    background-color: #f1f5f9 !important; /* slate-100 */
+    background-color: #f1f5f9 !important;
+    /* slate-100 */
   }
 
   /* Structural Borders & Dividers */
@@ -69,38 +80,46 @@ html:not(.dark) {
   .border-slate-800\/80,
   .border-slate-700,
   .border-slate-800\/60 {
-    border-color: #e2e8f0 !important;   /* slate-200 */
+    border-color: #e2e8f0 !important;
+    /* slate-200 */
   }
 
   /* Text Contrast Hierarchy */
   .text-slate-200 {
-    color: #1e293b !important;          /* slate-800 */
+    color: #1e293b !important;
+    /* slate-800 */
   }
 
   .text-slate-300 {
-    color: #334155 !important;          /* slate-700 */
+    color: #334155 !important;
+    /* slate-700 */
   }
 
   .text-slate-400 {
-    color: #64748b !important;          /* slate-500 */
+    color: #64748b !important;
+    /* slate-500 */
   }
 
   .text-slate-500 {
-    color: #94a3b8 !important;          /* slate-400 */
+    color: #94a3b8 !important;
+    /* slate-400 */
   }
 
   /* Accent Colors Readability in Light Mode */
   .text-cyan-400,
   .text-cyan-300 {
-    color: #0284c7 !important;          /* sky-600 */
+    color: #0284c7 !important;
+    /* sky-600 */
   }
 
   .bg-cyan-500\/10 {
-    background-color: #e0f2fe !important; /* sky-100 */
+    background-color: #e0f2fe !important;
+    /* sky-100 */
   }
 
   .border-cyan-500\/30 {
-    border-color: #bae6fd !important;     /* sky-200 */
+    border-color: #bae6fd !important;
+    /* sky-200 */
   }
 
   /* Interactive Filter Buttons */
@@ -125,7 +144,8 @@ html:not(.dark) {
   /* Card Hover Rings and Borders */
   .hover\:border-slate-700:hover,
   .hover\:border-slate-600:hover {
-    border-color: #cbd5e1 !important;   /* slate-300 */
+    border-color: #cbd5e1 !important;
+    /* slate-300 */
     box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
   }
 
@@ -151,7 +171,7 @@ html:not(.dark) {
 
   /* Theme Toggle Button */
   #theme-toggle {
-    color: #475569 !important;
+    color: #458aec !important;
     background-color: #f1f5f9 !important;
   }
 

@@ -2,8 +2,8 @@
 %“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 8 0 R /F4 9 0 R /F5 10 0 R /F6 11 0 R 
-  /F7 12 0 R
+/F1 2 0 R /F2 3 0 R /F3 8 0 R /F4 10 0 R /F5 11 0 R /F6 13 0 R 
+  /F7 15 0 R
 >>
 endobj
 2 0 obj
@@ -46,46 +46,74 @@ endobj
 endobj
 8 0 obj
 <<
-/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+/BaseFont /ZapfDingbats /Name /F3 /Subtype /Type1 /Type /Font
 >>
 endobj
 9 0 obj
 <<
-/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+/A <<
+/S /URI /Type /Action /URI (https://play.google.com/store/apps/details?id=com.polin.kawser.candela&hl=en)
+>> /Border [ 0 0 0 ] /Rect [ 314.448 600.7898 369 612.5898 ] /Subtype /Link /Type /Annot
 >>
 endobj
 10 0 obj
 <<
-/BaseFont /ZapfDingbats /Name /F5 /Subtype /Type1 /Type /Font
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
 >>
 endobj
 11 0 obj
 <<
-/BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F6 /Subtype /Type1 /Type /Font
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
 >>
 endobj
 12 0 obj
 <<
-/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F7 /Subtype /Type1 /Type /Font
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Zafff-e/AspNetCore-ProductCatalog-MVC)
+>> /Border [ 0 0 0 ] /Rect [ 334.024 526.8898 369 538.6898 ] /Subtype /Link /Type /Annot
 >>
 endobj
 13 0 obj
+<<
+/BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F6 /Subtype /Type1 /Type /Font
+>>
+endobj
+14 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Zafff-e)
+>> /Border [ 0 0 0 ] /Rect [ 334.024 441.9898 369 453.7898 ] /Subtype /Link /Type /Annot
+>>
+endobj
+15 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F7 /Subtype /Type1 /Type /Font
+>>
+endobj
+16 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Zafff-e)
+>> /Border [ 0 0 0 ] /Rect [ 334.024 368.0898 369 379.8898 ] /Subtype /Link /Type /Annot
+>>
+endobj
+17 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (mailto:nishatsharmeen@gmail.com)
 >> /Border [ 0 0 0 ] /Rect [ 403.9055 23.93976 500.3115 33.73976 ] /Subtype /Link /Type /Annot
 >>
 endobj
-14 0 obj
+18 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://www.linkedin.com/in/nishat-sharmeen-71996132/)
 >> /Border [ 0 0 0 ] /Rect [ 403.9055 13.33976 537.8175 23.13976 ] /Subtype /Link /Type /Annot
 >>
 endobj
-15 0 obj
+19 0 obj
 <<
-/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 13 0 R 14 0 R ] /Contents 19 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 18 0 R /Resources <<
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 9 0 R 12 0 R 14 0 R 16 0 R 17 0 R 18 0 R ] /Contents 23 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 22 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -93,25 +121,25 @@ endobj
 >> /Type /Page
 >>
 endobj
-16 0 obj
+20 0 obj
 <<
-/PageMode /UseNone /Pages 18 0 R /Type /Catalog
+/PageMode /UseNone /Pages 22 0 R /Type /Catalog
 >>
 endobj
-17 0 obj
+21 0 obj
 <<
-/Author (\(anonymous\)) /CreationDate (D:20261010165219+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261010165219+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author (\(anonymous\)) /CreationDate (D:20261010174542+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261010174542+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
 >>
 endobj
-18 0 obj
+22 0 obj
 <<
-/Count 1 /Kids [ 15 0 R ] /Type /Pages
+/Count 1 /Kids [ 19 0 R ] /Type /Pages
 >>
 endobj
-19 0 obj
+23 0 obj
 <<
-/Length 17731
+/Length 18646
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -268,13 +296,29 @@ Q
 q
 1 0 0 1 20 597.9898 cm
 q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 0 cm
+q
 BT 1 0 0 1 0 2.5 Tm 11.8 TL /F2 9.3 Tf .058824 .090196 .164706 rg (Candela \227 HSC Physics & Math Mobile App) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281 0 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 3.8 Tm /F2 8 Tf 11.8 TL 13.448 0 Td (Google Play ) Tj /F3 8 Tf 11.8 TL (n) Tj /F2 8 Tf 11.8 TL T* -13.448 0 Td ET
+Q
+Q
+q
+Q
 Q
 Q
 q
 1 0 0 1 20 587.5898 cm
 q
-BT 1 0 0 1 0 2.4 Tm 10.4 TL /F3 8 Tf .278431 .333333 .411765 rg (Flutter, Dart, Mobile Architecture \177 ) Tj /F4 8 Tf .043137 .145098 .270588 rg (10K+ Installs \177 4.6) Tj /F5 8 Tf 10.4 TL (H) Tj /F4 8 Tf 10.4 TL ( Google Play) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm 10.4 TL /F4 8 Tf .278431 .333333 .411765 rg (Flutter, Dart, Mobile Architecture \177 ) Tj /F5 8 Tf .043137 .145098 .270588 rg (10K+ Installs \177 4.6) Tj /F3 8 Tf 10.4 TL (H) Tj /F5 8 Tf 10.4 TL T* ET
 Q
 Q
 q
@@ -283,7 +327,7 @@ Q
 q
 1 0 0 1 20 564.3898 cm
 q
-BT 1 0 0 1 9 13.7 Tm -6 0 Td -0.110428 Tw 11 TL /F1 8.3 Tf .117647 .160784 .231373 rg (\177 Contributed as co-developer to a production Android educational app live on Google Play Store) Tj T* 0 Tw 6 0 Td (with ) Tj /F2 8.3 Tf (10,000+ active installs) Tj /F1 8.3 Tf ( and a ) Tj /F2 8.3 Tf (4.6) Tj /F5 8.3 Tf 11 TL (H) Tj /F2 8.3 Tf 11 TL ( user rating across 570+ reviews) Tj /F1 8.3 Tf (.) Tj T* ET
+BT 1 0 0 1 9 13.7 Tm -6 0 Td -0.110428 Tw 11 TL /F1 8.3 Tf .117647 .160784 .231373 rg (\177 Contributed as co-developer to a production Android educational app live on Google Play Store) Tj T* 0 Tw 6 0 Td (with ) Tj /F2 8.3 Tf (10,000+ active installs) Tj /F1 8.3 Tf ( and a ) Tj /F2 8.3 Tf (4.6) Tj /F3 8.3 Tf 11 TL (H) Tj /F2 8.3 Tf 11 TL ( user rating across 570+ reviews) Tj /F1 8.3 Tf (.) Tj T* ET
 Q
 Q
 q
@@ -298,14 +342,30 @@ Q
 q
 1 0 0 1 20 524.0898 cm
 q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 0 cm
+q
 BT 1 0 0 1 0 2.5 Tm 11.8 TL /F2 9.3 Tf .058824 .090196 .164706 rg (ProductCatalogSPA & Product Management System) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281 0 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 3.8 Tm /F2 8 Tf 11.8 TL 33.024 0 Td (GitHub ) Tj /F3 8 Tf 11.8 TL (n) Tj /F2 8 Tf 11.8 TL T* -33.024 0 Td ET
+Q
+Q
+q
+Q
 Q
 Q
 q
 1 0 0 1 20 513.6898 cm
 q
 .278431 .333333 .411765 rg
-BT 1 0 0 1 0 2.4 Tm /F3 8 Tf 10.4 TL (C#, ASP.NET Core \(.NET 9\), EF Core, SQL Server, React 19, Angular) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm /F4 8 Tf 10.4 TL (C#, ASP.NET Core \(.NET 9\), EF Core, SQL Server, React 19, Angular) Tj T* ET
 Q
 Q
 q
@@ -329,14 +389,30 @@ Q
 q
 1 0 0 1 20 439.1898 cm
 q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 0 cm
+q
 BT 1 0 0 1 0 2.5 Tm 11.8 TL /F2 9.3 Tf .058824 .090196 .164706 rg (TechNova \227 Real-Time Tech Hardware E-Commerce) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281 0 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 3.8 Tm /F2 8 Tf 11.8 TL 33.024 0 Td (GitHub ) Tj /F3 8 Tf 11.8 TL (n) Tj /F2 8 Tf 11.8 TL T* -33.024 0 Td ET
+Q
+Q
+q
+Q
 Q
 Q
 q
 1 0 0 1 20 428.7898 cm
 q
 .278431 .333333 .411765 rg
-BT 1 0 0 1 0 2.4 Tm /F3 8 Tf 10.4 TL (Node.js, Express.js, MongoDB \(Mongoose\), WebSockets, bcrypt) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm /F4 8 Tf 10.4 TL (Node.js, Express.js, MongoDB \(Mongoose\), WebSockets, bcrypt) Tj T* ET
 Q
 Q
 q
@@ -360,15 +436,31 @@ Q
 q
 1 0 0 1 20 365.2898 cm
 q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 0 cm
+q
 .058824 .090196 .164706 rg
 BT 1 0 0 1 0 2.5 Tm /F2 9.3 Tf 11.8 TL (Employee Master-Details Enterprise Management) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281 0 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 3.8 Tm /F2 8 Tf 11.8 TL 33.024 0 Td (GitHub ) Tj /F3 8 Tf 11.8 TL (n) Tj /F2 8 Tf 11.8 TL T* -33.024 0 Td ET
+Q
+Q
+q
+Q
 Q
 Q
 q
 1 0 0 1 20 354.8898 cm
 q
 .278431 .333333 .411765 rg
-BT 1 0 0 1 0 2.4 Tm /F3 8 Tf 10.4 TL (ASP.NET Core Web API, EF Core, SQL Server, React 18, TypeScript) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm /F4 8 Tf 10.4 TL (ASP.NET Core Web API, EF Core, SQL Server, React 18, TypeScript) Tj T* ET
 Q
 Q
 q
@@ -413,7 +505,7 @@ Q
 q
 1 0 0 1 20 259.4898 cm
 q
-BT 1 0 0 1 0 2.4 Tm 10.4 TL /F3 8 Tf .278431 .333333 .411765 rg (IsDB-BISEW IT Scholarship Programme \(SCSL\) \177 Jan 2026 \226 Oct 2026) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm 10.4 TL /F4 8 Tf .278431 .333333 .411765 rg (IsDB-BISEW IT Scholarship Programme \(SCSL\) \177 Jan 2026 \226 Oct 2026) Tj T* ET
 Q
 Q
 q
@@ -444,7 +536,7 @@ Q
 q
 1 0 0 1 20 186.0898 cm
 q
-BT 1 0 0 1 0 2.4 Tm 10.4 TL /F3 8 Tf .278431 .333333 .411765 rg (Marico Bangladesh Limited, Dhaka \177 2021 \226 2022) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm 10.4 TL /F4 8 Tf .278431 .333333 .411765 rg (Marico Bangladesh Limited, Dhaka \177 2021 \226 2022) Tj T* ET
 Q
 Q
 q
@@ -468,7 +560,7 @@ Q
 q
 1 0 0 1 20 123.6898 cm
 q
-BT 1 0 0 1 0 2.4 Tm 10.4 TL /F3 8 Tf .278431 .333333 .411765 rg (Academic Mentorship & Tech Services, Dhaka \177 Academic & Hardware Track) Tj T* ET
+BT 1 0 0 1 0 2.4 Tm 10.4 TL /F4 8 Tf .278431 .333333 .411765 rg (Academic Mentorship & Tech Services, Dhaka \177 Academic & Hardware Track) Tj T* ET
 Q
 Q
 q
@@ -649,7 +741,7 @@ q
 1 0 0 1 403.9055 332.9898 cm
 q
 .278431 .333333 .411765 rg
-BT 1 0 0 1 0 12.2 Tm /F3 7.8 Tf 10 TL (IsDB-BISEW IT Scholarship Programme \(SCSL\),) Tj T* (2026) Tj T* ET
+BT 1 0 0 1 0 12.2 Tm /F4 7.8 Tf 10 TL (IsDB-BISEW IT Scholarship Programme \(SCSL\),) Tj T* (2026) Tj T* ET
 Q
 Q
 q
@@ -679,7 +771,7 @@ q
 1 0 0 1 403.9055 273.8898 cm
 q
 .278431 .333333 .411765 rg
-BT 1 0 0 1 0 2.2 Tm /F3 7.8 Tf 10 TL (University of Dhaka \(DU\), 2014 \226 2019) Tj T* ET
+BT 1 0 0 1 0 2.2 Tm /F4 7.8 Tf 10 TL (University of Dhaka \(DU\), 2014 \226 2019) Tj T* ET
 Q
 Q
 q
@@ -707,7 +799,7 @@ Q
 q
 1 0 0 1 403.9055 215.7898 cm
 q
-BT 1 0 0 1 0 12.2 Tm 10 TL /F3 7.8 Tf .278431 .333333 .411765 rg (Cantonment Public School & College, Rangpur) Tj T* (\(CPSCR\), 2011 \226 2013) Tj T* ET
+BT 1 0 0 1 0 12.2 Tm 10 TL /F4 7.8 Tf .278431 .333333 .411765 rg (Cantonment Public School & College, Rangpur) Tj T* (\(CPSCR\), 2011 \226 2013) Tj T* ET
 Q
 Q
 q
@@ -753,7 +845,7 @@ Q
 q
 1 0 0 1 403.9055 134.3898 cm
 q
-BT 1 0 0 1 0 12 Tm 9.8 TL /F3 7.6 Tf .278431 .333333 .411765 rg (Listening: 8.5 \177 Reading: 8.0 \177 Speaking: 7.0 \177) Tj T* (Writing: 6.5) Tj T* ET
+BT 1 0 0 1 0 12 Tm 9.8 TL /F4 7.6 Tf .278431 .333333 .411765 rg (Listening: 8.5 \177 Reading: 8.0 \177 Speaking: 7.0 \177) Tj T* (Writing: 6.5) Tj T* ET
 Q
 Q
 q
@@ -797,7 +889,7 @@ Q
 q
 1 0 0 1 403.9055 54.08976 cm
 q
-BT 1 0 0 1 0 12.2 Tm 10 TL /F3 7.8 Tf .278431 .333333 .411765 rg (Senior Faculty \177 IsDB-BISEW IT Scholarship) Tj T* (Project) Tj T* ET
+BT 1 0 0 1 0 12.2 Tm 10 TL /F4 7.8 Tf .278431 .333333 .411765 rg (Senior Faculty \177 IsDB-BISEW IT Scholarship) Tj T* (Project) Tj T* ET
 Q
 Q
 q
@@ -842,37 +934,41 @@ Q
 endstream
 endobj
 xref
-0 20
+0 24
 0000000000 65535 f 
 0000000061 00000 n 
-0000000158 00000 n 
-0000000265 00000 n 
-0000000377 00000 n 
-0000000559 00000 n 
-0000000735 00000 n 
-0000000913 00000 n 
-0000001110 00000 n 
-0000001225 00000 n 
-0000001344 00000 n 
-0000001428 00000 n 
-0000001539 00000 n 
-0000001645 00000 n 
-0000001829 00000 n 
-0000002035 00000 n 
-0000002291 00000 n 
-0000002361 00000 n 
-0000002642 00000 n 
-0000002703 00000 n 
+0000000159 00000 n 
+0000000266 00000 n 
+0000000378 00000 n 
+0000000560 00000 n 
+0000000736 00000 n 
+0000000914 00000 n 
+0000001111 00000 n 
+0000001194 00000 n 
+0000001416 00000 n 
+0000001532 00000 n 
+0000001652 00000 n 
+0000001855 00000 n 
+0000001966 00000 n 
+0000002139 00000 n 
+0000002245 00000 n 
+0000002418 00000 n 
+0000002602 00000 n 
+0000002808 00000 n 
+0000003091 00000 n 
+0000003161 00000 n 
+0000003442 00000 n 
+0000003503 00000 n 
 trailer
 <<
 /ID 
-[<ec83b8c1e6ce081a350dbdd1dff25d7a><ec83b8c1e6ce081a350dbdd1dff25d7a>]
+[<0ac0c061b40ff98223050addda117dca><0ac0c061b40ff98223050addda117dca>]
 % ReportLab generated PDF document -- digest (opensource)
 
-/Info 17 0 R
-/Root 16 0 R
-/Size 20
+/Info 21 0 R
+/Root 20 0 R
+/Size 24
 >>
 startxref
-20487
+22202
 %%EOF
