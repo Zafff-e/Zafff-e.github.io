@@ -57,28 +57,28 @@ endobj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://play.google.com/store/apps/details?id=com.polin.kawser.candela&hl=en)
->> /Border [ 0 0 0 ] /Rect [ 509.9953 564.5523 561.1378 574.3523 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 509.9953 544.3523 561.1378 554.1523 ] /Subtype /Link /Type /Annot
 >>
 endobj
 11 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://github.com/Zafff-e/AspNetCore-ProductCatalog-MVC)
->> /Border [ 0 0 0 ] /Rect [ 528.3478 516.9523 561.1378 526.7523 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 528.3478 496.7523 561.1378 506.5523 ] /Subtype /Link /Type /Annot
 >>
 endobj
 12 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://github.com/Zafff-e)
->> /Border [ 0 0 0 ] /Rect [ 528.3478 449.2523 561.1378 459.0523 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 528.3478 429.0523 561.1378 438.8523 ] /Subtype /Link /Type /Annot
 >>
 endobj
 13 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://github.com/Zafff-e)
->> /Border [ 0 0 0 ] /Rect [ 528.3478 381.5523 561.1378 391.3523 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 528.3478 361.3523 561.1378 371.1523 ] /Subtype /Link /Type /Annot
 >>
 endobj
 14 0 obj
@@ -98,7 +98,7 @@ endobj
 endobj
 16 0 obj
 <<
-/Author (\(anonymous\)) /CreationDate (D:20261010151121+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261010151121+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author (\(anonymous\)) /CreationDate (D:20261010152206+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261010152206+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
 >>
 endobj
@@ -109,7 +109,7 @@ endobj
 endobj
 18 0 obj
 <<
-/Length 13817
+/Length 14549
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -202,60 +202,72 @@ n 0 0 m 527.2756 0 l S
 Q
 Q
 q
-1 0 0 1 28.1378 591.4898 cm
+1 0 0 1 28.1378 571.2898 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 0 90.9 cm
+1 0 0 1 0 111.1 cm
 q
 BT 1 0 0 1 0 2.4 Tm 10 TL /F2 7.6 Tf .058824 .090196 .164706 rg (\177 Backend Development:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 120 80.9 cm
+1 0 0 1 120 101.1 cm
 q
 .058824 .090196 .164706 rg
 BT 1 0 0 1 0 12.4 Tm /F1 7.6 Tf 10 TL (C# \(.NET 9/8, .NET Framework 4.8\), ASP.NET Core Web API, Minimal APIs, ASP.NET MVC 5, Web API 2, Node.js,) Tj T* (Express.js) Tj T* ET
 Q
 Q
 q
-1 0 0 1 0 70.7 cm
+1 0 0 1 0 90.9 cm
 q
 BT 1 0 0 1 0 2.4 Tm 10 TL /F2 7.6 Tf .058824 .090196 .164706 rg (\177 Databases & ORM:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 120 60.7 cm
+1 0 0 1 120 80.9 cm
 q
 .058824 .090196 .164706 rg
 BT 1 0 0 1 0 12.4 Tm /F1 7.6 Tf 10 TL (Microsoft SQL Server \(T-SQL, Stored Procs, TVPs, Transactions, Schemabound Views, UDFs, Indexing\), EF Core, EF6,) Tj T* (ADO.NET, MongoDB) Tj T* ET
 Q
 Q
 q
-1 0 0 1 0 50.5 cm
+1 0 0 1 0 70.7 cm
 q
 BT 1 0 0 1 0 2.4 Tm 10 TL /F2 7.6 Tf .058824 .090196 .164706 rg (\177 Frontend & Mobile:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 120 40.5 cm
+1 0 0 1 120 60.7 cm
 q
 .058824 .090196 .164706 rg
 BT 1 0 0 1 0 12.4 Tm /F1 7.6 Tf 10 TL (React 19 / 18, TypeScript, JavaScript \(ES6+\), Angular \(Standalone\), Flutter/Dart, HTML5, CSS3, Bootstrap 5, Vite, Axios,) Tj T* (EJS) Tj T* ET
 Q
 Q
 q
-1 0 0 1 0 30.3 cm
+1 0 0 1 0 50.5 cm
 q
 BT 1 0 0 1 0 2.4 Tm 10 TL /F2 7.6 Tf .058824 .090196 .164706 rg (\177 Architecture & Security:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 120 20.3 cm
+1 0 0 1 120 40.5 cm
 q
 .058824 .090196 .164706 rg
 BT 1 0 0 1 0 12.4 Tm /F1 7.6 Tf 10 TL (3-Tier Architecture, Master-Detail Systems, Repository Pattern, Factory Pattern, DTOs, JWT Bearer, OWIN OAuth 2.0,) Tj T* (bcrypt, CORS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 0 30.3 cm
+q
+BT 1 0 0 1 0 2.4 Tm 10 TL /F2 7.6 Tf .058824 .090196 .164706 rg (\177 Hardware & Systems:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 120 20.3 cm
+q
+BT 1 0 0 1 0 12.4 Tm 10 TL /F1 7.6 Tf .058824 .090196 .164706 rg (Desktop & Laptop Hardware Diagnostics & Component Repair, Custom PC Rigs, Thermal Management, BIOS/UEFI) Tj T* (Recovery) Tj T* ET
 Q
 Q
 q
@@ -276,16 +288,16 @@ Q
 Q
 Q
 q
-1 0 0 1 34 589.6898 cm
+1 0 0 1 34 569.4898 cm
 Q
 q
-1 0 0 1 34 578.8898 cm
+1 0 0 1 34 558.6898 cm
 q
 BT 1 0 0 1 0 2.2 Tm 10.8 TL /F2 8.6 Tf .043137 .145098 .270588 rg (FEATURED SOFTWARE & MOBILE PROJECTS) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 577.7898 cm
+1 0 0 1 34 557.5898 cm
 q
 .5 w
 1 J
@@ -294,7 +306,7 @@ n 0 0 m 527.2756 0 l S
 Q
 Q
 q
-1 0 0 1 28.1378 559.6898 cm
+1 0 0 1 28.1378 539.4898 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -316,25 +328,25 @@ Q
 Q
 Q
 q
-1 0 0 1 34 559.3898 cm
+1 0 0 1 34 539.1898 cm
 Q
 q
-1 0 0 1 34 539.7898 cm
+1 0 0 1 34 519.5898 cm
 q
 BT 1 0 0 1 9 12.1 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Contributed as co-developer to production Android educational app live on ) Tj /F2 7.5 Tf (Google Play Store with 10,000+ active installs) Tj /F1 7.5 Tf ( and a ) Tj /F2 7.5 Tf (4.6) Tj /F4 7.5 Tf 9.8 TL (H) Tj /F2 7.5 Tf 9.8 TL ( user rating across) Tj T* 5 0 Td (570+ reviews) Tj /F1 7.5 Tf (.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 529.9898 cm
+1 0 0 1 34 509.7898 cm
 q
 BT 1 0 0 1 9 2.3 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Structured core formula indexation, offline mathematical study modules, responsive mobile UI views, and optimized client navigation workflows.) Tj T* 5 0 Td ET
 Q
 Q
 q
-1 0 0 1 34 528.3898 cm
+1 0 0 1 34 508.1898 cm
 Q
 q
-1 0 0 1 28.1378 501.7898 cm
+1 0 0 1 28.1378 481.5898 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -356,25 +368,25 @@ Q
 Q
 Q
 q
-1 0 0 1 34 501.4898 cm
+1 0 0 1 34 481.2898 cm
 Q
 q
-1 0 0 1 34 481.8898 cm
+1 0 0 1 34 461.6898 cm
 q
 BT 1 0 0 1 9 12.1 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Architected high-throughput RESTful Web API with single-controller CRUD routing, normalized Category-Product-Brand relations, and automated database) Tj T* 5 0 Td (seeding \(`EnsureCreated\(\)`\).) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 462.2898 cm
+1 0 0 1 34 442.0898 cm
 q
 BT 1 0 0 1 9 12.1 Tm -5 0 Td -0.016538 Tw 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Built dual clients: Angular client with dynamic brand row insertions and cascading deletes; React 19 client with Table and Card/Grid views and instant search) Tj T* 0 Tw 5 0 Td (filtering.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 460.6898 cm
+1 0 0 1 34 440.4898 cm
 Q
 q
-1 0 0 1 28.1378 434.0898 cm
+1 0 0 1 28.1378 413.8898 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -396,25 +408,25 @@ Q
 Q
 Q
 q
-1 0 0 1 34 433.7898 cm
+1 0 0 1 34 413.5898 cm
 Q
 q
-1 0 0 1 34 414.1898 cm
+1 0 0 1 34 393.9898 cm
 q
 BT 1 0 0 1 9 12.1 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Developed full-stack e-commerce hardware store with product catalogs, shopping cart sessions, cash-on-delivery checkout, and MongoDB normalized) Tj T* 5 0 Td (document models.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 394.5898 cm
+1 0 0 1 34 374.3898 cm
 q
 BT 1 0 0 1 9 12.1 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Integrated bi-directional ) Tj /F2 7.5 Tf (WebSockets \(`ws`\)) Tj /F1 7.5 Tf ( to push live inventory levels without polling; automated invoice QR Code generation and transactional emails) Tj T* 5 0 Td (via Nodemailer.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 392.9898 cm
+1 0 0 1 34 372.7898 cm
 Q
 q
-1 0 0 1 28.1378 366.3898 cm
+1 0 0 1 28.1378 346.1898 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -436,31 +448,31 @@ Q
 Q
 Q
 q
-1 0 0 1 34 366.0898 cm
+1 0 0 1 34 345.8898 cm
 Q
 q
-1 0 0 1 34 346.4898 cm
+1 0 0 1 34 326.2898 cm
 q
 BT 1 0 0 1 9 12.1 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Engineered master-detail persistence resolving multipart payload constraints by combining binary image streams with client-serialized JSON strings) Tj T* 5 0 Td (\(`EXperiencesString`\).) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 326.8898 cm
+1 0 0 1 34 306.6898 cm
 q
 BT 1 0 0 1 9 12.1 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Designed transactional ) Tj /F2 7.5 Tf (Wipe & Re-insert) Tj /F1 7.5 Tf ( pattern in HTTP PUT endpoint to synchronize child collections without orphaned records; applied) Tj T* 5 0 Td (`AsNoTracking\(\)` query optimization.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 325.0898 cm
+1 0 0 1 34 304.8898 cm
 Q
 q
-1 0 0 1 34 314.2898 cm
+1 0 0 1 34 294.0898 cm
 q
 BT 1 0 0 1 0 2.2 Tm 10.8 TL /F2 8.6 Tf .043137 .145098 .270588 rg (PROFESSIONAL EXPERIENCE & IT TRAINING) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 313.1898 cm
+1 0 0 1 34 292.9898 cm
 q
 .5 w
 1 J
@@ -469,7 +481,7 @@ n 0 0 m 527.2756 0 l S
 Q
 Q
 q
-1 0 0 1 28.1378 295.0898 cm
+1 0 0 1 28.1378 274.8898 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -490,25 +502,25 @@ Q
 Q
 Q
 q
-1 0 0 1 34 294.7898 cm
+1 0 0 1 34 274.5898 cm
 Q
 q
-1 0 0 1 34 275.1898 cm
+1 0 0 1 34 254.9898 cm
 q
 BT 1 0 0 1 9 12.1 Tm -5 0 Td -0.034551 Tw 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Completed intensive 9-month professional software engineering curriculum \(Trainee ID: ) Tj /F2 7.5 Tf (1294926) Tj /F1 7.5 Tf (, Round 70\), dedicating 1,000+ hours to enterprise software) Tj T* 0 Tw 5 0 Td (development.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 265.3898 cm
+1 0 0 1 34 245.1898 cm
 q
 BT 1 0 0 1 9 2.3 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Built and deployed 8+ full-stack applications; served as backend and database lead on capstone ) Tj /F2 7.5 Tf (Skill-Commerce) Tj /F1 7.5 Tf ( hyperlocal marketplace.) Tj T* 5 0 Td ET
 Q
 Q
 q
-1 0 0 1 34 263.8898 cm
+1 0 0 1 34 243.6898 cm
 Q
 q
-1 0 0 1 28.1378 247.5898 cm
+1 0 0 1 28.1378 227.3898 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -529,59 +541,64 @@ Q
 Q
 Q
 q
-1 0 0 1 34 247.2898 cm
+1 0 0 1 34 227.0898 cm
 Q
 q
-1 0 0 1 34 227.6898 cm
+1 0 0 1 34 207.4898 cm
 q
 BT 1 0 0 1 9 12.1 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Analyzed commercial KPIs, regional market trends, and distribution performance metrics; collaborated with cross-functional commercial teams to deliver) Tj T* 5 0 Td (quantitative executive presentations.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 226.1898 cm
+1 0 0 1 34 205.9898 cm
 Q
 q
-1 0 0 1 28.1378 209.8898 cm
+1 0 0 1 28.1378 179.3898 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
 1 0 0 1 6 3 cm
 q
-BT 1 0 0 1 0 2.2 Tm 10.3 TL /F2 8.1 Tf .058824 .090196 .164706 rg (IT Workshop Coordinator / ICT Instructor \227 ) Tj /F3 8.1 Tf (Freelance / Community Initiatives, Dhaka) Tj T* ET
+BT 1 0 0 1 0 12.5 Tm 10.3 TL /F2 8.1 Tf .058824 .090196 .164706 rg (HSC ICT Instructor & Hardware Systems Specialist \227 ) Tj /F3 8.1 Tf (Academic Mentorship & Tech Services,) Tj T* (Dhaka) Tj T* ET
 Q
 Q
 q
-1 0 0 1 430 3.5 cm
+1 0 0 1 401 13.8 cm
 q
-.278431 .333333 .411765 rg
-BT 1 0 0 1 0 2.3 Tm /F1 7.5 Tf 9.8 TL 47.5675 0 Td (Prior Experience) Tj T* -47.5675 0 Td ET
-Q
-Q
-q
-Q
+BT 1 0 0 1 0 2.3 Tm 36.5625 0 Td 9.8 TL /F1 7.5 Tf .278431 .333333 .411765 rg (Academic & Hardware Track) Tj T* -36.5625 0 Td ET
 Q
 Q
 q
-1 0 0 1 34 209.5898 cm
 Q
-q
-1 0 0 1 34 199.7898 cm
-q
-BT 1 0 0 1 9 2.3 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Instructed students and trainees in computer fundamentals, relational database logic, and productivity workflows.) Tj T* 5 0 Td ET
 Q
 Q
 q
-1 0 0 1 34 197.9898 cm
+1 0 0 1 34 179.0898 cm
 Q
 q
-1 0 0 1 34 187.1898 cm
+1 0 0 1 34 159.4898 cm
+q
+BT 1 0 0 1 9 12.1 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Taught national NCTB HSC ICT syllabus to college students: C programming syntax, relational SQL databases, Boolean logic gates, and web design) Tj T* 5 0 Td (fundamentals.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34 139.8898 cm
+q
+BT 1 0 0 1 9 12.1 Tm -5 0 Td 9.8 TL /F1 7.5 Tf .058824 .090196 .164706 rg (\177 Lifelong hardware mastery: component-level troubleshooting, repair, custom PC builds, thermal repasting, and BIOS/firmware restorations for laptops and) Tj T* 5 0 Td (desktops.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34 138.0898 cm
+Q
+q
+1 0 0 1 34 127.2898 cm
 q
 BT 1 0 0 1 0 2.2 Tm 10.8 TL /F2 8.6 Tf .043137 .145098 .270588 rg (EDUCATION & QUALIFICATIONS) Tj T* ET
 Q
 Q
 q
-1 0 0 1 34 186.0898 cm
+1 0 0 1 34 126.1898 cm
 q
 .5 w
 1 J
@@ -590,7 +607,7 @@ n 0 0 m 527.2756 0 l S
 Q
 Q
 q
-1 0 0 1 28.1378 152.3898 cm
+1 0 0 1 28.1378 92.48976 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -663,7 +680,7 @@ xref
 trailer
 <<
 /ID 
-[<61dc5b42dd7cdb2b9adf5fcb2e4a3f6b><61dc5b42dd7cdb2b9adf5fcb2e4a3f6b>]
+[<8b7c08836b129488a793ff046c29578b><8b7c08836b129488a793ff046c29578b>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 16 0 R
@@ -671,5 +688,5 @@ trailer
 /Size 19
 >>
 startxref
-16624
+17356
 %%EOF
