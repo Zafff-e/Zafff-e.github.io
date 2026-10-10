@@ -78,6 +78,34 @@ const skillGroups: SkillGroup[] = [
     ]
   },
   {
+    domain: 'Hardware Diagnostics & Repair',
+    icon: '🔧',
+    description: 'Deep lifelong hardware mastery: component-level laptop and desktop troubleshooting, repair, and custom rigs.',
+    skills: [
+      { name: 'Laptop & Desktop Repair' },
+      { name: 'Component-Level Diagnostics' },
+      { name: 'Custom PC Architecture' },
+      { name: 'Thermal Repasting & Cooling' },
+      { name: 'BIOS / UEFI & Firmware' },
+      { name: 'OS Recovery & Partitioning' },
+      { name: 'Hardware Stress Testing' },
+    ]
+  },
+  {
+    domain: 'HSC ICT & Computer Pedagogy',
+    icon: '🎓',
+    description: 'Long-term instruction of national NCTB HSC ICT syllabus to college students with structured lab practicums.',
+    skills: [
+      { name: 'HSC ICT Curriculum' },
+      { name: 'C Programming Instruction' },
+      { name: 'Relational Database Logic (SQL)' },
+      { name: 'Boolean Logic & Digital Gates' },
+      { name: 'HTML & Web Fundamentals' },
+      { name: 'Number Systems & Conversion' },
+      { name: 'Practical Lab Mentorship' },
+    ]
+  },
+  {
     domain: 'AI & Methodologies',
     icon: '🤖',
     description: 'Modern development workflows, multi-agent systems, and Agile execution.',
@@ -102,12 +130,12 @@ const skillGroups: SkillGroup[] = [
       Technical Skill Matrix &amp; Stack
     </h2>
     <p class="mt-2 text-sm text-slate-400 max-w-2xl">
-      A systematic breakdown of languages, enterprise frameworks, database engines, and software engineering methodologies.
+      A systematic breakdown of languages, enterprise frameworks, database engines, hardware diagnostics, and computer pedagogy.
     </p>
   </div>
 
   <!-- HugoBlox Academic Skills Grid -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
     {skillGroups.map((group) => (
       <div class="rounded-2xl border border-slate-800 bg-slate-900 p-5 transition-colors duration-150 hover:border-slate-700 flex flex-col justify-between">
         <div>

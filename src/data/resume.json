@@ -20,6 +20,8 @@
     { "category": "Frontend Development", "items": ["React 19 / 18", "TypeScript", "JavaScript (ES6+)", "Angular (Standalone)", "HTML5", "CSS3", "Bootstrap 5", "Vite", "Axios", "EJS"] },
     { "category": "Architecture & Security", "items": ["3-Tier Architecture", "Master-Detail Relational Architecture", "Repository Pattern", "Factory Pattern", "DTOs", "JWT Bearer Auth", "OWIN OAuth 2.0", "bcrypt Hashing", "CORS"] },
     { "category": "AI & Agentic Systems", "items": ["Agentic AI Workflows", "LLM Orchestration & Prompting", "Multi-Agent Handling", "AI-Assisted Development"] },
+    { "category": "Hardware & Systems Engineering", "items": ["Laptop & Desktop Diagnostics", "Component-Level Repair", "Custom PC Architecture", "Thermal Repasting & Cooling", "BIOS/UEFI Firmware Recovery", "Hardware Benchmarking"] },
+    { "category": "Academic ICT Instruction", "items": ["NCTB HSC ICT Curriculum", "C Programming Instruction", "Relational Database (SQL) Logic", "Digital Logic Gates & Boolean Algebra", "Web Design Foundations", "Practical Lab Mentorship"] },
     { "category": "Tools & Platforms", "items": ["Visual Studio 2022", "VS Code", "SQL Server Management Studio (SSMS)", "Git", "GitHub (Branching, PRs)", "Postman (API Testing)", "Swagger/OpenAPI", "SAP Crystal Reports", "Azure"] }
   ],
   "experience": [
@@ -44,11 +46,13 @@
       ]
     },
     {
-      "company": "Freelance / Community Initiatives, Dhaka",
-      "role": "IT Workshop Coordinator / ICT Instructor",
-      "period": "Prior Experience",
+      "company": "Academic Mentorship & Independent Tech Services, Dhaka",
+      "role": "HSC ICT Instructor & Hardware Systems Specialist",
+      "period": "Academic & Hardware Track",
       "highlights": [
-        "Mentored students and trainees on computer fundamentals, relational database logic, and productivity tools."
+        "Instructed college students in the national NCTB HSC ICT curriculum across multiple academic sessions (C programming syntax, relational SQL database structures, Boolean algebra & digital gates, and web design foundations).",
+        "Diagnosed, repaired, upgraded, and maintained desktop computers and laptop workstations at component levels, drawing on lifelong hardware expertise developed through PC gaming and extensive system builds.",
+        "Executed component troubleshooting, motherboard diagnostics, thermal paste replacement, hardware stress testing, and BIOS/UEFI restorations."
       ]
     }
   ],
