@@ -2,7 +2,7 @@
 %“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 8 0 R /F4 9 0 R
+/F1 2 0 R /F2 3 0 R /F3 8 0 R /F4 9 0 R /F5 14 0 R
 >>
 endobj
 2 0 obj
@@ -83,7 +83,26 @@ endobj
 endobj
 14 0 obj
 <<
-/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 10 0 R 11 0 R 12 0 R 13 0 R ] /Contents 18 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 17 0 R /Resources <<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+15 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (mailto:nishatsharmeen@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 430.8553 65.18976 525.9928 74.18976 ] /Subtype /Link /Type /Annot
+>>
+endobj
+16 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/nishat-sharmeen-71996132/)
+>> /Border [ 0 0 0 ] /Rect [ 532.7878 65.18976 561.1378 74.18976 ] /Subtype /Link /Type /Annot
+>>
+endobj
+17 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 10 0 R 11 0 R 12 0 R 13 0 R 15 0 R 16 0 R ] /Contents 21 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -91,25 +110,25 @@ endobj
 >> /Type /Page
 >>
 endobj
-15 0 obj
+18 0 obj
 <<
-/PageMode /UseNone /Pages 17 0 R /Type /Catalog
+/PageMode /UseNone /Pages 20 0 R /Type /Catalog
 >>
 endobj
-16 0 obj
+19 0 obj
 <<
-/Author (\(anonymous\)) /CreationDate (D:20261010154639+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261010154639+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author (\(anonymous\)) /CreationDate (D:20261010165159+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261010165159+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
 >>
 endobj
-17 0 obj
+20 0 obj
 <<
-/Count 1 /Kids [ 14 0 R ] /Type /Pages
+/Count 1 /Kids [ 17 0 R ] /Type /Pages
 >>
 endobj
-18 0 obj
+21 0 obj
 <<
-/Length 14550
+/Length 15333
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -653,40 +672,83 @@ q
 Q
 Q
 Q
+q
+1 0 0 1 34 90.88976 cm
+Q
+q
+1 0 0 1 34 80.08976 cm
+q
+.043137 .145098 .270588 rg
+BT 1 0 0 1 0 2.2 Tm /F2 8.6 Tf 10.8 TL (PROFESSIONAL REFERENCE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34 78.98976 cm
+q
+.5 w
+1 J
+.796078 .835294 .882353 RG
+n 0 0 m 527.2756 0 l S
+Q
+Q
+q
+1 0 0 1 28.1378 61.38976 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.3 Tm 9.8 TL /F2 7.5 Tf .278431 .333333 .411765 rg (Nishat Sharmeen) Tj /F1 7.5 Tf ( \227 Senior Faculty \(Cross Platform Apps: ASP.NET, Angular & React\), ) Tj /F5 7.5 Tf (IsDB-BISEW) Tj T* ET
+Q
+Q
+q
+1 0 0 1 381 3 cm
+q
+BT 1 0 0 1 0 2.3 Tm 21.7175 0 Td 9.8 TL /F1 7.5 Tf .007843 .517647 .780392 rg (nishatsharmeen@gmail.com) Tj .278431 .333333 .411765 rg ( \177 ) Tj .007843 .517647 .780392 rg (LinkedIn) Tj T* -21.7175 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
  
 endstream
 endobj
 xref
-0 19
+0 22
 0000000000 65535 f 
 0000000061 00000 n 
-0000000122 00000 n 
-0000000229 00000 n 
-0000000341 00000 n 
-0000000522 00000 n 
-0000000699 00000 n 
-0000000877 00000 n 
-0000001074 00000 n 
-0000001193 00000 n 
-0000001276 00000 n 
-0000001505 00000 n 
-0000001714 00000 n 
-0000001893 00000 n 
-0000002072 00000 n 
-0000002342 00000 n 
-0000002412 00000 n 
-0000002693 00000 n 
-0000002754 00000 n 
+0000000133 00000 n 
+0000000240 00000 n 
+0000000352 00000 n 
+0000000533 00000 n 
+0000000710 00000 n 
+0000000888 00000 n 
+0000001085 00000 n 
+0000001204 00000 n 
+0000001287 00000 n 
+0000001516 00000 n 
+0000001725 00000 n 
+0000001904 00000 n 
+0000002083 00000 n 
+0000002199 00000 n 
+0000002383 00000 n 
+0000002589 00000 n 
+0000002873 00000 n 
+0000002943 00000 n 
+0000003224 00000 n 
+0000003285 00000 n 
 trailer
 <<
 /ID 
-[<95a8990de0e9bbbcf79ae7ef214398f8><95a8990de0e9bbbcf79ae7ef214398f8>]
+[<4a030915028f1f0af8a94e48f87959cc><4a030915028f1f0af8a94e48f87959cc>]
 % ReportLab generated PDF document -- digest (opensource)
 
-/Info 16 0 R
-/Root 15 0 R
-/Size 19
+/Info 19 0 R
+/Root 18 0 R
+/Size 22
 >>
 startxref
-17357
+18671
 %%EOF

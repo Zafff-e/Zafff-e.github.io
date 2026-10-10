@@ -71,7 +71,21 @@ endobj
 endobj
 13 0 obj
 <<
-/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R ] /Contents 17 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 16 0 R /Resources <<
+/A <<
+/S /URI /Type /Action /URI (mailto:nishatsharmeen@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 403.9055 23.93976 500.3115 33.73976 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/nishat-sharmeen-71996132/)
+>> /Border [ 0 0 0 ] /Rect [ 403.9055 13.33976 537.8175 23.13976 ] /Subtype /Link /Type /Annot
+>>
+endobj
+15 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 13 0 R 14 0 R ] /Contents 19 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 18 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -79,25 +93,25 @@ endobj
 >> /Type /Page
 >>
 endobj
-14 0 obj
-<<
-/PageMode /UseNone /Pages 16 0 R /Type /Catalog
->>
-endobj
-15 0 obj
-<<
-/Author (\(anonymous\)) /CreationDate (D:20261010160855+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261010160855+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
->>
-endobj
 16 0 obj
 <<
-/Count 1 /Kids [ 13 0 R ] /Type /Pages
+/PageMode /UseNone /Pages 18 0 R /Type /Catalog
 >>
 endobj
 17 0 obj
 <<
-/Length 16568
+/Author (\(anonymous\)) /CreationDate (D:20261010165219+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261010165219+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+18 0 obj
+<<
+/Count 1 /Kids [ 15 0 R ] /Type /Pages
+>>
+endobj
+19 0 obj
+<<
+/Length 17731
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -743,12 +757,76 @@ BT 1 0 0 1 0 12 Tm 9.8 TL /F3 7.6 Tf .278431 .333333 .411765 rg (Listening: 8.5 
 Q
 Q
 q
-1 0 0 1 403.9055 130.3898 cm
+1 0 0 1 403.9055 130.8898 cm
 Q
 q
-1 0 0 1 403.9055 109.3898 cm
+1 0 0 1 403.9055 109.8898 cm
 q
 BT 1 0 0 1 0 13 Tm 10.5 TL /F2 8 Tf .117647 .160784 .231373 rg (Bengali:) Tj /F1 8 Tf ( Native  ) Tj (\177) Tj (  ) Tj /F2 8 Tf (English:) Tj /F1 8 Tf ( Professional) Tj T* (Working Fluency) Tj T* ET
+Q
+Q
+q
+1 0 0 1 403.9055 106.3898 cm
+Q
+q
+1 0 0 1 403.9055 93.58976 cm
+q
+.043137 .145098 .270588 rg
+BT 1 0 0 1 0 2.6 Tm /F2 10.2 Tf 12.8 TL (PROFESSIONAL REFERENCE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 403.9055 90.38976 cm
+q
+1.2 w
+1 J
+.043137 .145098 .270588 RG
+n 0 0 m 173.3701 0 l S
+Q
+Q
+q
+1 0 0 1 403.9055 74.88976 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 2.4 Tm /F2 8.6 Tf 11 TL (Nishat Sharmeen) Tj T* ET
+Q
+Q
+q
+1 0 0 1 403.9055 74.08976 cm
+Q
+q
+1 0 0 1 403.9055 54.08976 cm
+q
+BT 1 0 0 1 0 12.2 Tm 10 TL /F3 7.8 Tf .278431 .333333 .411765 rg (Senior Faculty \177 IsDB-BISEW IT Scholarship) Tj T* (Project) Tj T* ET
+Q
+Q
+q
+1 0 0 1 403.9055 53.28976 cm
+Q
+q
+1 0 0 1 403.9055 33.68976 cm
+q
+BT 1 0 0 1 0 12 Tm 9.8 TL /F1 7.6 Tf .117647 .160784 .231373 rg (Cross Platform Apps using ASP.NET, Angular &) Tj T* (React) Tj T* ET
+Q
+Q
+q
+1 0 0 1 403.9055 32.48976 cm
+Q
+q
+1 0 0 1 403.9055 22.68976 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 2.2 Tm /F1 7.6 Tf 9.8 TL (nishatsharmeen@gmail.com) Tj T* ET
+Q
+Q
+q
+1 0 0 1 403.9055 21.88976 cm
+Q
+q
+1 0 0 1 403.9055 12.08976 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 2.2 Tm /F1 7.6 Tf 9.8 TL (LinkedIn: in/nishat-sharmeen-71996132) Tj T* ET
 Q
 Q
 q
@@ -764,7 +842,7 @@ Q
 endstream
 endobj
 xref
-0 18
+0 20
 0000000000 65535 f 
 0000000061 00000 n 
 0000000158 00000 n 
@@ -779,20 +857,22 @@ xref
 0000001428 00000 n 
 0000001539 00000 n 
 0000001645 00000 n 
-0000001887 00000 n 
-0000001957 00000 n 
-0000002238 00000 n 
-0000002299 00000 n 
+0000001829 00000 n 
+0000002035 00000 n 
+0000002291 00000 n 
+0000002361 00000 n 
+0000002642 00000 n 
+0000002703 00000 n 
 trailer
 <<
 /ID 
-[<2080296f7b57e123eb856eddb4c25eca><2080296f7b57e123eb856eddb4c25eca>]
+[<ec83b8c1e6ce081a350dbdd1dff25d7a><ec83b8c1e6ce081a350dbdd1dff25d7a>]
 % ReportLab generated PDF document -- digest (opensource)
 
-/Info 15 0 R
-/Root 14 0 R
-/Size 18
+/Info 17 0 R
+/Root 16 0 R
+/Size 20
 >>
 startxref
-18920
+20487
 %%EOF
