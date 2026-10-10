@@ -74,6 +74,19 @@
   ],
   "projects": [
     {
+      "name": "Candela — HSC Physics & Math Mobile App",
+      "tag": "10K+ Play Store Installs",
+      "status": "Production Live",
+      "tech": ["Flutter", "Dart", "PostgreSQL", "Google Play Store", "Mobile Architecture"],
+      "description": "Educational mobile application published on Google Play with 10,000+ active downloads and 4.6★ rating across 570+ reviews, delivering structured study guides for HSC Physics and Mathematics.",
+      "url": "https://play.google.com/store/apps/details?id=com.polin.kawser.candela&hl=en",
+      "highlights": [
+        "Co-developed a high-impact mobile education application published on the Google Play Store, achieving 10,000+ active installs and a 4.6★ rating across 570+ student reviews.",
+        "Engineered fluid, state-managed mobile UI screens using Flutter & Dart, structured offline formula indexation, and optimized navigation workflows.",
+        "Leveraged PostgreSQL for structured relational persistence of academic modules and chapter-by-chapter curriculum resources."
+      ]
+    },
+    {
       "name": "ProductCatalogSPA & Product Management System",
       "tag": "Full-Stack Master-Detail",
       "status": "Completed",

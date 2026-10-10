@@ -104,6 +104,20 @@ const resumeUrl = "/resume.pdf";
               </svg>
             </a>
 
+            <!-- Google Play Store -->
+            <a
+              href="https://play.google.com/store/apps/details?id=com.polin.kawser.candela&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex size-9 items-center justify-center rounded-lg border border-slate-800 bg-slate-950/80 text-slate-400 hover:border-emerald-500/50 hover:bg-slate-800 hover:text-emerald-400 transition shadow-sm"
+              aria-label="Google Play Store App"
+              title="Google Play Store: Candela App (10K+ Installs)"
+            >
+              <svg class="size-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.609 1.814L13.793 12 3.61 22.186a1.996 1.996 0 0 1-1.61-.406A1.996 1.996 0 0 1 1.5 20.31V3.69c0-.575.18-1.096.5-1.47a1.996 1.996 0 0 1 1.609-.406zm11.605 11.605l2.457 2.458-12.72 7.344 10.263-9.802zm0-2.838L4.951.78l12.72 7.344-2.457 2.457zm1.414 1.419l3.654 2.11a1.998 1.998 0 0 0 0-3.46l-3.654 2.11z"/>
+              </svg>
+            </a>
+
             <!-- Download CV PDF -->
             <a
               href={resumeUrl}
@@ -122,15 +136,19 @@ const resumeUrl = "/resume.pdf";
             </a>
           </div>
 
-          <!-- Academic Metrics Pill Bar -->
-          <div class="mt-6 grid grid-cols-2 gap-2.5 w-full text-center">
-            <div class="rounded-xl border border-slate-800/80 bg-slate-950/60 p-2.5">
-              <span class="block text-base font-extrabold text-cyan-400 font-mono">1,000+</span>
-              <span class="text-[11px] text-slate-400 font-medium">Lab &amp; Dev Hours</span>
+          <!-- Academic & Impact Metrics Pill Bar -->
+          <div class="mt-6 grid grid-cols-3 gap-2 w-full text-center">
+            <div class="rounded-xl border border-slate-800/80 bg-slate-950/60 p-2">
+              <span class="block text-sm sm:text-base font-extrabold text-cyan-400 font-mono">1,000+</span>
+              <span class="text-[10px] text-slate-400 font-medium">Dev Hours</span>
             </div>
-            <div class="rounded-xl border border-slate-800/80 bg-slate-950/60 p-2.5">
-              <span class="block text-base font-extrabold text-blue-400 font-mono">8+</span>
-              <span class="text-[11px] text-slate-400 font-medium">Enterprise Repos</span>
+            <div class="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-2">
+              <span class="block text-sm sm:text-base font-extrabold text-emerald-400 font-mono">10K+</span>
+              <span class="text-[10px] text-emerald-300 font-medium">Play Installs</span>
+            </div>
+            <div class="rounded-xl border border-slate-800/80 bg-slate-950/60 p-2">
+              <span class="block text-sm sm:text-base font-extrabold text-blue-400 font-mono">8+</span>
+              <span class="text-[10px] text-slate-400 font-medium">Repos</span>
             </div>
           </div>
         </div>
