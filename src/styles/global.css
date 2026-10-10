@@ -22,7 +22,146 @@ html:not(.dark) {
   color-scheme: light;
 }
 
-/* Custom scrollbar for sleek scholarly look */
+/* ==========================================================================
+   LIGHT MODE (WHITE THEME) ADAPTIVE SYSTEM
+   Activates when <html class="dark"> is toggled off by ThemeToggle.
+   ========================================================================== */
+html:not(.dark) {
+  /* Page background and typography */
+  body {
+    background-color: #f8fafc !important; /* slate-50 */
+    color: #334155 !important;           /* slate-700 */
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Header & Navigation Bar */
+  header {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-color: #e2e8f0 !important;   /* slate-200 */
+    backdrop-filter: blur(12px) !important;
+  }
+
+  /* Headings & High-contrast Text */
+  h1, h2, h3, h4, h5, h6,
+  .text-white {
+    color: #0f172a !important;          /* slate-900 */
+  }
+
+  /* Primary Card Surfaces & Sections */
+  .bg-slate-900,
+  .bg-slate-950,
+  footer {
+    background-color: #ffffff !important;
+  }
+
+  /* Inner Card / Elevated / Tag Surfaces */
+  .bg-slate-950\/80,
+  .bg-slate-950\/90,
+  .bg-slate-950\/95,
+  .bg-slate-900\/80,
+  .bg-slate-900\/60,
+  .bg-slate-900\/90 {
+    background-color: #f1f5f9 !important; /* slate-100 */
+  }
+
+  /* Structural Borders & Dividers */
+  .border-slate-800,
+  .border-slate-800\/80,
+  .border-slate-700,
+  .border-slate-800\/60 {
+    border-color: #e2e8f0 !important;   /* slate-200 */
+  }
+
+  /* Text Contrast Hierarchy */
+  .text-slate-200 {
+    color: #1e293b !important;          /* slate-800 */
+  }
+
+  .text-slate-300 {
+    color: #334155 !important;          /* slate-700 */
+  }
+
+  .text-slate-400 {
+    color: #64748b !important;          /* slate-500 */
+  }
+
+  .text-slate-500 {
+    color: #94a3b8 !important;          /* slate-400 */
+  }
+
+  /* Accent Colors Readability in Light Mode */
+  .text-cyan-400,
+  .text-cyan-300 {
+    color: #0284c7 !important;          /* sky-600 */
+  }
+
+  .bg-cyan-500\/10 {
+    background-color: #e0f2fe !important; /* sky-100 */
+  }
+
+  .border-cyan-500\/30 {
+    border-color: #bae6fd !important;     /* sky-200 */
+  }
+
+  /* Interactive Filter Buttons */
+  .filter-btn:not(.active) {
+    background-color: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+    color: #64748b !important;
+  }
+
+  .filter-btn:not(.active):hover {
+    background-color: #f1f5f9 !important;
+    border-color: #cbd5e1 !important;
+    color: #0f172a !important;
+  }
+
+  .filter-btn.active {
+    background-color: #e0f2fe !important;
+    border-color: #38bdf8 !important;
+    color: #0369a1 !important;
+  }
+
+  /* Card Hover Rings and Borders */
+  .hover\:border-slate-700:hover,
+  .hover\:border-slate-600:hover {
+    border-color: #cbd5e1 !important;   /* slate-300 */
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .hover\:bg-slate-800:hover {
+    background-color: #f1f5f9 !important;
+  }
+
+  /* Mobile Dropdown Menu */
+  #mobile-menu {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  /* Timeline Node Ring */
+  .ring-slate-900,
+  .ring-slate-950 {
+    --tw-ring-color: #ffffff !important;
+  }
+
+  .ring-slate-700 {
+    --tw-ring-color: #e2e8f0 !important;
+  }
+
+  /* Theme Toggle Button */
+  #theme-toggle {
+    color: #475569 !important;
+    background-color: #f1f5f9 !important;
+  }
+
+  #theme-toggle:hover {
+    background-color: #e2e8f0 !important;
+    color: #0f172a !important;
+  }
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -39,4 +178,16 @@ html:not(.dark) {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #334155;
+}
+
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
