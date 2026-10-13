@@ -179,6 +179,27 @@ html:not(.dark) {
     background-color: #e2e8f0 !important;
     color: #0f172a !important;
   }
+
+  /* CV Download Modal Light Mode Adaptation */
+  #cv-modal-content {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25) !important;
+  }
+
+  #cv-modal-content input {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    color: #0f172a !important;
+  }
+
+  #cv-modal-content input::placeholder {
+    color: #94a3b8 !important;
+  }
+
+  #cv-modal-content input:focus {
+    border-color: #0284c7 !important;
+  }
 }
 
 /* Custom scrollbar */

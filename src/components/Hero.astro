@@ -1,8 +1,10 @@
 ---
 import resume from '../data/resume.json';
+import { cvTrackingConfig } from '../config/cvTracking';
 
 const { name, email } = resume.basics;
-const resumeUrl = "/resume.pdf";
+const resumeUrl = cvTrackingConfig.resumeUrl;
+const resumeFileName = cvTrackingConfig.resumeFileName;
 ---
 <section id="about" class="py-8 sm:py-12 border-b border-slate-800/80">
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
@@ -124,7 +126,8 @@ const resumeUrl = "/resume.pdf";
               download="AHM_Zafir_Hasan_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5 text-xs font-semibold text-slate-200 hover:border-cyan-500/50 hover:bg-slate-700 hover:text-white transition"
+              data-cv-modal-trigger
+              class="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5 text-xs font-semibold text-slate-200 hover:border-cyan-500/50 hover:bg-slate-700 hover:text-white transition cursor-pointer"
               title="Download 1-Page ATS Academic Resume"
             >
               <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

@@ -2,7 +2,9 @@
 import '../styles/global.css';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import Footer from '../components/Footer.astro';
+import CvDownloadModal from '../components/CvDownloadModal.astro';
 import resume from '../data/resume.json';
+import { cvTrackingConfig } from '../config/cvTracking';
 
 interface Props {
   title?: string;
@@ -14,7 +16,7 @@ const {
   description = resume.basics.summary,
 } = Astro.props;
 
-const resumeUrl = "/resume.pdf";
+const resumeUrl = cvTrackingConfig.resumeUrl;
 ---
 <!doctype html>
 <html lang="en" class="dark scroll-smooth">
@@ -81,7 +83,8 @@ const resumeUrl = "/resume.pdf";
             download="AHM_Zafir_Hasan_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-slate-950 shadow-sm transition hover:from-cyan-400 hover:to-blue-500 hover:shadow-cyan-500/25 active:scale-95"
+            data-cv-modal-trigger
+            class="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-slate-950 shadow-sm transition hover:from-cyan-400 hover:to-blue-500 hover:shadow-cyan-500/25 active:scale-95 cursor-pointer"
             title="Download Academic CV / Resume (PDF)"
           >
             <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -127,6 +130,9 @@ const resumeUrl = "/resume.pdf";
 
     <!-- Footer Component -->
     <Footer />
+
+    <!-- CV Download Lead Capture Modal -->
+    <CvDownloadModal />
 
     <!-- Mobile Nav Toggle Script -->
     <script is:inline>

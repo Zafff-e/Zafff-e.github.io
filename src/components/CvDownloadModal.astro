@@ -1,0 +1,560 @@
+---
+import { cvTrackingConfig } from '../config/cvTracking';
+
+const defaultSheetUrl = cvTrackingConfig.googleSheetWebAppUrl;
+const resumeUrl = cvTrackingConfig.resumeUrl;
+const resumeFileName = cvTrackingConfig.resumeFileName;
+---
+
+<!-- CV Download Lead Capture Modal -->
+<div
+  id="cv-download-modal"
+  class="fixed inset-0 z-[100] flex items-center justify-center p-4 transition-all duration-300 opacity-0 pointer-events-none"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="cv-modal-title"
+  aria-hidden="true"
+  data-sheet-url={defaultSheetUrl}
+  data-resume-url={resumeUrl}
+  data-resume-filename={resumeFileName}
+>
+  <!-- Backdrop Overlay with Glassmorphism -->
+  <div
+    id="cv-modal-backdrop"
+    class="fixed inset-0 bg-slate-950/80 backdrop-blur-md transition-opacity duration-300 cursor-pointer"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Modal Dialog Window -->
+  <div
+    id="cv-modal-content"
+    class="relative w-full max-w-lg rounded-2xl border border-slate-700/80 bg-slate-900/95 p-6 sm:p-8 shadow-2xl shadow-cyan-950/40 ring-1 ring-white/10 backdrop-blur-2xl transform transition-all duration-300 scale-95 opacity-0 z-10 text-slate-200"
+  >
+    <!-- Top Gradient Accent Strip -->
+    <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500"></div>
+
+    <!-- Close Button -->
+    <button
+      id="cv-modal-close-btn"
+      type="button"
+      class="absolute top-4 right-4 rounded-xl p-2 text-slate-400 hover:text-white hover:bg-slate-800 transition focus:outline-none focus:ring-2 focus:ring-cyan-500"
+      aria-label="Close dialog"
+    >
+      <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <!-- FORM VIEW -->
+    <div id="cv-modal-form-view" class="space-y-5">
+      <!-- Modal Header -->
+      <div class="flex items-start gap-4">
+        <div class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-600/20 ring-1 ring-cyan-500/30 text-cyan-400">
+          <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h3 id="cv-modal-title" class="text-xl font-bold font-display text-white tracking-tight">
+              Download Curriculum Vitae
+            </h3>
+            <span class="rounded-full bg-cyan-500/15 px-2 py-0.5 text-[11px] font-mono font-medium text-cyan-300 ring-1 ring-cyan-500/30">
+              PDF
+            </span>
+          </div>
+          <p class="mt-1 text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Please introduce yourself below to instantly receive the verified academic &amp; software engineering CV of <strong class="text-slate-200">AHM Zafir Hasan</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Lead Capture Form -->
+      <form id="cv-download-form" class="space-y-4" novalidate>
+        <!-- Honeypot anti-spam field (hidden from real users) -->
+        <input
+          type="text"
+          name="_security_website"
+          class="hidden"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+        />
+
+        <!-- Name Input -->
+        <div>
+          <label for="cv-user-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
+            Full Name <span class="text-rose-400">*</span>
+          </label>
+          <div class="relative rounded-xl shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+              <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="cv-user-name"
+              name="name"
+              required
+              placeholder="e.g. Alex Morgan"
+              autocomplete="name"
+              class="block w-full rounded-xl border border-slate-700 bg-slate-950/70 py-2.5 pl-10 pr-3.5 text-sm text-white placeholder-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 transition"
+            />
+          </div>
+          <p id="cv-name-error" class="hidden mt-1 text-xs text-rose-400">Please provide your name.</p>
+        </div>
+
+        <!-- Email Input -->
+        <div>
+          <label for="cv-user-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
+            Work or Personal Email <span class="text-rose-400">*</span>
+          </label>
+          <div class="relative rounded-xl shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+              <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </div>
+            <input
+              type="email"
+              id="cv-user-email"
+              name="email"
+              required
+              placeholder="e.g. alex.morgan@company.com"
+              autocomplete="email"
+              class="block w-full rounded-xl border border-slate-700 bg-slate-950/70 py-2.5 pl-10 pr-3.5 text-sm text-white placeholder-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 transition"
+            />
+          </div>
+          <p id="cv-email-error" class="hidden mt-1 text-xs text-rose-400">Please provide a valid email address.</p>
+        </div>
+
+        <!-- Organization / Role Input (Optional) -->
+        <div>
+          <div class="flex items-center justify-between mb-1.5">
+            <label for="cv-user-company" class="block text-xs font-semibold uppercase tracking-wider text-slate-300">
+              Organization / Role
+            </label>
+            <span class="text-[11px] text-slate-500 font-mono">Optional</span>
+          </div>
+          <div class="relative rounded-xl shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
+              <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                <path d="M9 22v-4h6v4"></path>
+                <path d="M8 6h.01"></path>
+                <path d="M16 6h.01"></path>
+                <path d="M12 6h.01"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M16 10h.01"></path>
+                <path d="M16 14h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M8 14h.01"></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="cv-user-company"
+              name="company"
+              placeholder="e.g. Google, Tech Lead, Recruiter, University..."
+              class="block w-full rounded-xl border border-slate-700 bg-slate-950/70 py-2.5 pl-10 pr-3.5 text-sm text-white placeholder-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 transition"
+            />
+          </div>
+        </div>
+
+        <!-- Submission Error Box (Hidden by default) -->
+        <div id="cv-form-alert" class="hidden rounded-xl border border-rose-500/30 bg-rose-500/10 p-3 text-xs text-rose-300">
+          <p id="cv-form-alert-message"></p>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-2">
+          <button
+            id="cv-submit-btn"
+            type="submit"
+            class="group relative flex w-full items-center justify-center gap-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-4 py-3 text-sm font-bold text-slate-950 shadow-lg shadow-cyan-500/20 hover:from-cyan-400 hover:to-blue-500 hover:shadow-cyan-500/30 active:scale-[0.98] transition-all cursor-pointer"
+          >
+            <!-- Default Button State -->
+            <span id="cv-submit-text" class="flex items-center gap-2">
+              <svg class="size-4 transition-transform group-hover:translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV (PDF)</span>
+            </span>
+
+            <!-- Loading Spinner State (Hidden by default) -->
+            <span id="cv-submit-loading" class="hidden items-center gap-2">
+              <svg class="size-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              <span>Generating download...</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- Privacy & Respect Note -->
+        <div class="flex items-center justify-center gap-1.5 pt-1 text-center text-[11px] text-slate-400">
+          <svg class="size-3.5 text-slate-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span>Information is strictly used for tracking recruiter interest. Zero spam.</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- SUCCESS CONFIRMATION VIEW (Hidden by default) -->
+    <div id="cv-modal-success-view" class="hidden text-center py-4 space-y-4">
+      <div class="mx-auto flex size-14 items-center justify-center rounded-2xl bg-emerald-500/20 text-emerald-400 ring-1 ring-emerald-500/40">
+        <svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+
+      <div class="space-y-1.5">
+        <h4 class="text-xl font-bold font-display text-white">
+          Thank you, <span id="cv-success-name">Visitor</span>!
+        </h4>
+        <p class="text-sm text-slate-300">
+          Your CV download has begun. You now have the full academic and professional dossier.
+        </p>
+      </div>
+
+      <!-- Fallback Download Trigger -->
+      <div class="rounded-xl border border-slate-700/60 bg-slate-950/60 p-3 text-xs text-slate-400">
+        <span>If your download did not start automatically, </span>
+        <a
+          id="cv-manual-download-link"
+          href={resumeUrl}
+          download={resumeFileName}
+          class="font-semibold text-cyan-400 hover:text-cyan-300 underline underline-offset-2 inline-flex items-center gap-1"
+        >
+          click here to download
+          <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+
+      <div class="pt-2">
+        <button
+          id="cv-success-close-btn"
+          type="button"
+          class="w-full rounded-xl border border-slate-700 bg-slate-800/80 px-4 py-2.5 text-sm font-semibold text-slate-200 hover:bg-slate-700 hover:text-white transition cursor-pointer"
+        >
+          Return to Portfolio
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Client-side Interactive Logic -->
+<script is:inline>
+  (function () {
+    const modal = document.getElementById('cv-download-modal');
+    if (!modal) return;
+
+    const modalContent = document.getElementById('cv-modal-content');
+    const backdrop = document.getElementById('cv-modal-backdrop');
+    const closeBtn = document.getElementById('cv-modal-close-btn');
+    const successCloseBtn = document.getElementById('cv-success-close-btn');
+    const form = document.getElementById('cv-download-form');
+    const formView = document.getElementById('cv-modal-form-view');
+    const successView = document.getElementById('cv-modal-success-view');
+    const successNameEl = document.getElementById('cv-success-name');
+    const manualDownloadLink = document.getElementById('cv-manual-download-link');
+
+    const nameInput = document.getElementById('cv-user-name');
+    const emailInput = document.getElementById('cv-user-email');
+    const companyInput = document.getElementById('cv-user-company');
+    const nameError = document.getElementById('cv-name-error');
+    const emailError = document.getElementById('cv-email-error');
+    const alertBox = document.getElementById('cv-form-alert');
+    const alertMessage = document.getElementById('cv-form-alert-message');
+
+    const submitBtn = document.getElementById('cv-submit-btn');
+    const submitText = document.getElementById('cv-submit-text');
+    const submitLoading = document.getElementById('cv-submit-loading');
+
+    const sheetUrl = modal.getAttribute('data-sheet-url') || '';
+    const resumeUrl = modal.getAttribute('data-resume-url') || '/resume.pdf';
+    const resumeFileName = modal.getAttribute('data-resume-filename') || 'AHM_Zafir_Hasan_Resume.pdf';
+
+    const STORAGE_KEY = 'zafir_cv_lead_profile';
+    const AUDIT_LOG_KEY = 'zafir_cv_leads_audit';
+
+    // Helper: Pre-fill form from previous session
+    function prefillForm() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const profile = JSON.parse(saved);
+          if (profile.name && nameInput) nameInput.value = profile.name;
+          if (profile.email && emailInput) emailInput.value = profile.email;
+          if (profile.company && companyInput) companyInput.value = profile.company;
+        }
+      } catch (e) {
+        // Safe fallback
+      }
+    }
+
+    // Modal Visibility Helpers
+    function openModal() {
+      prefillForm();
+      // Reset view to form
+      if (formView) formView.classList.remove('hidden');
+      if (successView) successView.classList.add('hidden');
+      if (alertBox) alertBox.classList.add('hidden');
+      if (nameError) nameError.classList.add('hidden');
+      if (emailError) emailError.classList.add('hidden');
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.setAttribute('aria-hidden', 'false');
+
+      setTimeout(() => {
+        if (modalContent) {
+          modalContent.classList.remove('scale-95', 'opacity-0');
+          modalContent.classList.add('scale-100', 'opacity-100');
+        }
+      }, 10);
+
+      document.body.style.overflow = 'hidden';
+
+      // Focus name field
+      if (nameInput) {
+        setTimeout(() => nameInput.focus(), 100);
+      }
+    }
+
+    function closeModal() {
+      if (modalContent) {
+        modalContent.classList.remove('scale-100', 'opacity-100');
+        modalContent.classList.add('scale-95', 'opacity-0');
+      }
+      setTimeout(() => {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }, 200);
+    }
+
+    // Wire up all CV download triggers across the entire page
+    function attachTriggers() {
+      // Find buttons or links that trigger CV download
+      const triggers = document.querySelectorAll(
+        '[data-cv-modal-trigger], a[href*="resume.pdf"], a[href*="AhmZafirHasan"], a[download*="Resume"], a[download*="resume"]'
+      );
+
+      triggers.forEach((trigger) => {
+        // Skip the fallback link inside the modal itself
+        if (trigger === manualDownloadLink) return;
+
+        trigger.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          openModal();
+        });
+      });
+    }
+
+    // Run trigger attachment on load and DOM ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', attachTriggers);
+    } else {
+      attachTriggers();
+    }
+
+    // Modal Close Triggers
+    if (backdrop) backdrop.addEventListener('click', closeModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (successCloseBtn) successCloseBtn.addEventListener('click', closeModal);
+
+    // Escape Key Listener
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('pointer-events-none')) {
+        closeModal();
+      }
+    });
+
+    // Email validation regex
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    // Trigger actual download of the resume file
+    function triggerFileDownload() {
+      const link = document.createElement('a');
+      link.href = resumeUrl;
+      link.download = resumeFileName;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Record submission to localStorage audit log
+    function saveToLocalAudit(lead) {
+      try {
+        const existing = JSON.parse(localStorage.getItem(AUDIT_LOG_KEY) || '[]');
+        existing.unshift(lead);
+        // Keep up to 50 most recent
+        localStorage.setItem(AUDIT_LOG_KEY, JSON.stringify(existing.slice(0, 50)));
+        // Save profile for fast future fill
+        localStorage.setItem(
+          STORAGE_KEY,
+          JSON.stringify({
+            name: lead.name,
+            email: lead.email,
+            company: lead.company,
+          })
+        );
+      } catch (err) {
+        console.warn('Local audit log failed:', err);
+      }
+    }
+
+    // Form Submission Handler
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Check honeypot (bots fill this)
+        const hp = form.querySelector('input[name="_security_website"]');
+        if (hp && hp.value) {
+          // Fake success silently for bots
+          triggerFileDownload();
+          closeModal();
+          return;
+        }
+
+        const name = (nameInput?.value || '').trim();
+        const email = (emailInput?.value || '').trim();
+        const company = (companyInput?.value || '').trim();
+
+        let hasError = false;
+
+        // Validate name
+        if (!name || name.length < 2) {
+          if (nameError) nameError.classList.remove('hidden');
+          nameInput?.classList.add('border-rose-500', 'focus:ring-rose-500/20');
+          hasError = true;
+        } else {
+          if (nameError) nameError.classList.add('hidden');
+          nameInput?.classList.remove('border-rose-500', 'focus:ring-rose-500/20');
+        }
+
+        // Validate email
+        if (!email || !isValidEmail(email)) {
+          if (emailError) emailError.classList.remove('hidden');
+          emailInput?.classList.add('border-rose-500', 'focus:ring-rose-500/20');
+          hasError = true;
+        } else {
+          if (emailError) emailError.classList.add('hidden');
+          emailInput?.classList.remove('border-rose-500', 'focus:ring-rose-500/20');
+        }
+
+        if (hasError) return;
+
+        // Set Loading UI
+        if (submitBtn) submitBtn.disabled = true;
+        if (submitText) submitText.classList.add('hidden');
+        if (submitLoading) submitLoading.classList.remove('hidden', 'flex');
+        submitLoading.classList.add('flex');
+
+        const leadData = {
+          timestamp: new Date().toISOString(),
+          dateFormatted: new Date().toLocaleString(),
+          name: name,
+          email: email,
+          company: company || 'Not specified',
+          pageUrl: window.location.href,
+          referrer: document.referrer || 'Direct Visit',
+          userAgent: navigator.userAgent,
+        };
+
+        // Always save lead locally first
+        saveToLocalAudit(leadData);
+
+        // Send to Google Sheets Web App if configured
+        const hasValidSheetUrl =
+          sheetUrl &&
+          sheetUrl.startsWith('http') &&
+          !sheetUrl.includes('YOUR_SCRIPT_ID');
+
+        if (hasValidSheetUrl) {
+          try {
+            // mode: 'no-cors' allows Google Apps Script Web App redirects to work seamlessly
+            await fetch(sheetUrl, {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(leadData),
+            });
+          } catch (netErr) {
+            console.warn('Google Sheet network delivery note:', netErr);
+          }
+        } else {
+          console.info(
+            'ℹ️ Google Sheet Web App URL is not yet configured. The lead was saved locally in localStorage under "zafir_cv_leads_audit". Set up Google Sheets using the instructions in GOOGLE_SHEET_SETUP.md.'
+          );
+        }
+
+        // Reset submit button state
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitText) submitText.classList.remove('hidden');
+        if (submitLoading) {
+          submitLoading.classList.remove('flex');
+          submitLoading.classList.add('hidden');
+        }
+
+        // Trigger file download automatically
+        triggerFileDownload();
+
+        // Switch to success view
+        if (successNameEl) successNameEl.textContent = name;
+        if (manualDownloadLink) {
+          manualDownloadLink.href = resumeUrl;
+          manualDownloadLink.download = resumeFileName;
+        }
+        if (formView) formView.classList.add('hidden');
+        if (successView) successView.classList.remove('hidden');
+      });
+    }
+
+    // Real-time input clearing of errors
+    if (nameInput) {
+      nameInput.addEventListener('input', () => {
+        if (nameInput.value.trim().length >= 2) {
+          if (nameError) nameError.classList.add('hidden');
+          nameInput.classList.remove('border-rose-500', 'focus:ring-rose-500/20');
+        }
+      });
+    }
+
+    if (emailInput) {
+      emailInput.addEventListener('input', () => {
+        if (isValidEmail(emailInput.value.trim())) {
+          if (emailError) emailError.classList.add('hidden');
+          emailInput.classList.remove('border-rose-500', 'focus:ring-rose-500/20');
+        }
+      });
+    }
+  })();
+</script>
